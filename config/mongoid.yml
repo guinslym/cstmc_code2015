@@ -65,7 +65,7 @@ production:
       #uri: mongodb://myapp:myapp@ds061620.mongolab.com:61620/myapp
       # Defines the name of the default database that Mongoid can connect to.
       # (required).
-      uri: 'mongodb://heroku_app34215416:9bja64v8c5tnj59ola0cnne9hl@ds047581.mongolab.com:47581/heroku_app34215416'
+      uri: <%= ENV['MONGOLAB_URI'] %>
       # Provides the hosts the default session can connect to. Must be an array
       # of host:port pairs. (required)
 
