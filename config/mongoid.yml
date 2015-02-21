@@ -70,7 +70,6 @@ production:
       # of host:port pairs. (required)
 
       options:
-        read: :strong
         max_retries: 30
         retry_interval: 1
         timeout: 15
