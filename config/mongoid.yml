@@ -73,7 +73,6 @@ production:
         max_retries: 30
         retry_interval: 1
         timeout: 15
-        safe: true
         refresh_interval: 10
         # Change the default write concern. (default = { w: 1 })
         # write:
