@@ -8,6 +8,7 @@ class ApplicationController < ActionController::Base
   { locale: I18n.locale }
 end
 
+
  private
 def set_locale
   I18n.locale = params[:locale] || I18n.default_locale

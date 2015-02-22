@@ -36,7 +36,7 @@ $(function () {
     
 <%= search_form_for @search, :method => "get", id: "search-form", :html => {:class=>"form-group main-form"} do |f| %>
   <%#= text_field_tag :search, params[:search], placeholder: "Search Artefacts images", :class => "form-group main-form", :style => "height:40px;width:60%" %>
-  <%= f.search_field :objname_en_cont, :required => true, placeholder: "Search Artefacts images", :class => "form-group main-form", :style => "height:40px;width:60%" %>
+  <%= f.search_field :objname_en_cont, :required => true, placeholder: "Search Artefacts images (i.e. fire, pencil, pen ..", :class => "form-group main-form", :style => "height:40px;width:60%" %>
   <%= f.submit "Search Images", :name => nil, :class => 'btn btn-warning' %>
 <% end %>
 

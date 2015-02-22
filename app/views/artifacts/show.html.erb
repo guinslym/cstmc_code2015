@@ -49,23 +49,26 @@ td{
 </style>
 
 <%
-valeur = {language: [
-:en => "Fire Engine",
-:fr => "Véhicule d'incendie"
-]
-}.to_s
-lang = 4 > 0 ? 'en' : 'fr'
-valeur = eval(valeur)
-puts valeur['language'.to_sym][0][lang.to_sym]
-
-valeur2 = {
-:en => "Fire Engine",
-:fr => "Véhicule d'incendie"
-}.to_s
-puts (eval(valeur2)[lang.to_sym])
+def find_location(location)
+  #ain't got time anymore for this helper
+  #http://techno-science.ca/en/open-data/tips-using-artifact-open-data-set.php
+  {"1867".to_sym => "on display at the Canada Science and Technology Museum",
+    "CEF".to_sym => 'on display at the Canada Agriculture and Food Museum',
+    'NAM'.to_sym => 'on display at the Canada Aviation and Space Museum',
+    'Loan'.to_sym => "on loan to another institution"
+  }
+end
  %>
 
+
+
 <div class="container">
+<!--
+<h1><%#=t :hello_world %></h1>
+-->
+
+
+<h1><%= params[:locale]  %></h1>
 
 
 <div class="col-lg-10 col-lg-offset-1">
@@ -109,6 +112,11 @@ puts (eval(valeur2)[lang.to_sym])
       <tr>
         <td>Thumbnail Link</td>
         <td><%= @artifact.image_thumbnail  %></td>
+      </tr>
+      <tr>
+      <tr>
+        <td>Location</td>
+        <td><%= @artifact.art_location  %></td>
       </tr>
       <tr>
         <td>Artifact Group</td>

@@ -51,8 +51,14 @@ end
       @artefact = Artifact.where(:id => params[:id]).first
     	url = @artefact.image_original
       filename = 'can-tech-museum-' + @artefact.catalogue_number + ".jpg"#url.split('/')[-1]
-    	data = open(url).read
-    	send_data data, :disposition => 'attachment', :filename => filename
+    	begin
+        data = open(url).read
+    	  send_data data, :disposition => 'attachment', :filename => filename
+      rescue OpenURI::HTTPError
+        url = 'http://source.techno-science.ca/images/1986.0468.001.aa.cs.jpg'
+        data = open(url).read
+        send_data data, :disposition => 'attachment', :filename => 'wrong-parameter.jpeg'
+      end
     else
       #send a random image
       require 'open-uri'

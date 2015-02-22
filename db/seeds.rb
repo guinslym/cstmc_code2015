@@ -14,6 +14,8 @@ Artifact.delete_all
 if Rails.env.production?  
 
   puts "seeding on heroku"
+  puts "seeding 55 905 row on Heroku's Mongodb take about 55 min. :("
+  puts "on Heroku the seeding process  halt for 5 min on 54 771th and on the last document also????\nbut there is no Exception raise:)"
 
   def on_heroku_upload_this_file_to_the_db
     file = File.read("artefact_for_heroku_db.json")
@@ -45,7 +47,8 @@ if Rails.env.production?
         art_location: data['art_location']
       )
     end
-
+    
+    puts "created #{objname_en}"
   end
 
   #calling the function

@@ -251,3 +251,5 @@ fr:
       truncate: "..."
       first: "Premier"
       last: "Dernier"
+  hello_world: Bonjour world!
+  hello_flash: Bonjour flash!
