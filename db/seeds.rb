@@ -81,3 +81,32 @@ end#def
 files.each {|f| parse_the_json_file_to_db(f) }
 
 puts Artifact.count
+
+
+#Delete duplicates images
+#Some Artifacts share the same Images so I'll delete the DUPLICATE
+#this function is slow... 
+#it's 2 o'clock in the morning ... I can't think much???
+
+puts "\n\nYou need to go to db/seeds.rb and Uncomment the last Code"
+puts "To remove the duplicates....\n\n\t\t ----db/seeds.b---\n"
+=begin
+#dump this variable into a json file after
+collect_all_the_duplicate = []
+
+compte = 0
+Artifact.all.to_a.each do |n|
+  image = n.image_original
+  thumb = n.image_thumbnail
+  count_value =  Artifact.where(:image_original => image, :image_thumbnail => thumb).all.to_a.count
+  if count_value > 1
+    n.destroy!
+    puts "need to delete this image"
+    puts count_value
+    collect_all_the_duplicate.push(n)
+  end
+  compte = compte +1
+  puts compte
+end
+
+=end

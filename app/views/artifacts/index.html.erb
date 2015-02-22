@@ -13,6 +13,11 @@
 <%= paginate @artifacts,  :outer_window => 4, :window =>  4  %>
 
 <% 
+a_group_alpha = ["efb894", "f34a5e", "03cd53", "25ffd8", "9eddd0", "65473b", "652282", "a329b6", "83b307", "74d198", "733341", "e77ef4", "cc2ed2", "711547", "a82154"]
+
+b_composition = ["f95ac7", "17de88", "ca6e8e", "5565e0", "7eefbb", "1f6fa2", "2a2021", "e27b93", "7cf11e", "0d75a5", "ad5bcf", "82d696", "2485f6", "5adea3", "8d9d46", "2b6be1", "d81047", "700b0c", "12e573", "019fdd", "696aa0", "e0c2ed", "d6fa76", "e6d049"]
+%>
+<% 
 #application helper
 @composition = []
 @artifacts.each do |artefact| 
@@ -20,7 +25,7 @@
     if materiaux.size > 0
       materiaux.each do |mat|
         if !mat.eql?('[]')
-          @composition.append(mat)
+          @composition.append(mat.split.collect { |w| w }.join('_'))
           @composition.uniq!
         end
       end
@@ -35,7 +40,7 @@ def find_materiaux(materiaux_value)
   if materiaux_value.size > 0
     materiaux_value.each do |mat|
       if !mat.eql?('[]')
-        @obj_composition.append(mat)
+        @obj_composition.append(mat.split.collect { |w| w }.join('_'))
       end
     end#do
   else
@@ -50,22 +55,20 @@ end
 group =[]
 @artifacts.each do |artefact|
 artefact = eval(artefact.artifact_group_en)
-artefact.each {|n| group.push(n) if !n.empty?}
+artefact.each {|n| group.push(n.split.collect { |w| w }.join('_')) if !n.empty?}
 
 end
 @group_artifact = group.uniq!
 %>
-<%#= @composition %>
+<%#= @group_artifact  %>
+<%#= @composition  %>
 <% 
 
 def find_group(art_group)
 artefact = []
 art_group = eval(art_group)
 art_group.each do |n|
-  if n.include?(" ")
-    n.sub! " ", "-"
-  end
-  artefact.append(n)
+    artefact.append(n.split.collect { |w| w }.join('_'))
 end
 return artefact.join(" ")
 end
@@ -94,7 +97,7 @@ end
           @artifacts.each do |artefact| 
             compte = compte + 1
             %>
-            <li class="mix <%= find_group(artefact.artifact_group_en) %> <%= color.shuffle.first %> <%= obj = find_materiaux(artefact.artifact_composition_general_en) %> <%= option.shuffle.first %>">
+            <li class="mix <%= find_group(artefact.artifact_group_en) %>  <%= obj = find_materiaux(artefact.artifact_composition_general_en) %> <%= option.shuffle.first %>">
             <% Rails.env.production?  %>
             <%#= link_to (image_tag "rb/thumb/#{artefact.image_original.split("/")[-1]}", :tag =>"Image ", :class => "emr example#{compte}", data: {zoom_image: "#{artefact.image_original}"}), artefact %>
             <%= link_to (image_tag "#{artefact.image_original}", :tag =>"Image ", :class => "emr example#{compte}"), artefact %>

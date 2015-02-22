@@ -30,9 +30,7 @@
 
 <% group =  @group_artifact 
 
-def remove_unwanted_character(art_group)
-   art_group.sub! " ", "-"
-end
+
 %>
 
         <div class="cd-filter-block">
@@ -41,7 +39,7 @@ end
           <ul class="cd-filter-content cd-filters list">
           <% group.each do |artifact_group_en| %>
             <li>
-              <input class="filter" data-filter=".<%= remove_unwanted_character(artifact_group_en) %>" type="checkbox" id="checkbox1">
+              <input class="filter" data-filter=".<%= (artifact_group_en) %>" type="checkbox" id="checkbox1">
                 <label class="checkbox-label" for="checkbox1"><%= artifact_group_en %></label>
             </li>
 
@@ -49,7 +47,7 @@ end
           </ul> <!-- cd-filter-content -->
         </div> <!-- cd-filter-block -->
 
-<!--
+
 
         <div class="cd-filter-block">
           <h4>Search:Composition</h4>
@@ -76,7 +74,7 @@ end
           </ul> 
         </div> 
 
--->
+
 
 <% if 43 < 34 %>
         <div class="cd-filter-block">

@@ -71,8 +71,8 @@ puts (eval(valeur2)[lang.to_sym])
 <div class="col-lg-10 col-lg-offset-1">
                 <div class="benefit">
                 <span data-animation="bounceIn" class="benefit-icon fa fa-code bounceIn animated done-animation"></span>
-                <img id="zoom" src="<%= @artifact.image_link %>" data-zoom-image="<%= @artifact.image_link %>"  class="thumbnail" alt="<%= @artifact.objname %>"/>                 <h4 class="benefit-title"><%=  @artifact.objname %></h4>
-                <h1 class="post-title text-center"><%=  @artifact.objname %></h1>
+                <img id="zoom" src="<%= @artifact.image_original %>" data-zoom-image="<%= @artifact.image_original %>"  class="thumbnail" alt="<%= @artifact.objname_en %>"/>                 <h4 class="benefit-title"><%=  @artifact.objname_en %></h4>
+                <h1 class="post-title text-center"><%=  @artifact.objname_en %></h1>
 
 
                 <table class="table table-bordered show_content table-hover" style="background-color:#F2F2F2;">
@@ -82,29 +82,29 @@ puts (eval(valeur2)[lang.to_sym])
       <tr>
         <td>Dataset name</td>
         <td>
-        <% link = @artifact.dataset_name.split("-")[0] 
+        <% link = @artifact.art_dataset_name.split("-")[0] 
            link = 'http://donnees.techno-science.ca/en/dataset?q=' + link +'&sort=score+desc%2C+metadata_modified+desc'
         %>
         <a href="<%= link %>" target="_blank">
-        <%= @artifact.dataset_name %>
+        <%= @artifact.art_dataset_name %>
         </a>
         </td>
       </tr>
       <tr>
         <td>Artifact name</td>
-        <td><%= @artifact.objname %></td>
+        <td><%= @artifact.objname_en %></td>
       </tr>
       <tr>
-        <td>Artifact <abbr title="A Unique Catalogue number is assigned to each artifact." class="initialism" style="color:green">UID</abbr></td>
-        <td><%= @artifact.uid %></td>
+        <td>Artifact <abbr title="A Catalogue number is assigned to each artifact." class="initialism" style="color:green">UID</abbr></td>
+        <td><%= @artifact.catalogue_number %></td>
       </tr>
       <tr>
         <td>Assessement date</td>
-        <td><%= @artifact.date %></td>
+        <td><%= @artifact.artifact_date %></td>
       </tr>
       <tr>
         <td>Image Link</td>
-        <td><%= @artifact.image_link %></td>
+        <td><%= @artifact.image_original %></td>
       </tr>
       <tr>
         <td>Thumbnail Link</td>
@@ -112,16 +112,20 @@ puts (eval(valeur2)[lang.to_sym])
       </tr>
       <tr>
         <td>Artifact Group</td>
-        <td><%= @artifact.art_group %></td>
+        <td><% (eval(@artifact.artifact_group_en)).each do |mat| %>
+            <span class="label label-primary"><%= mat.capitalize %></span>
+        <%end%></td>
       </tr>
       <tr>
         <td>Artifact Category</td>
-        <td><%= @artifact.category %></td>
+        <td><% (eval(@artifact.artifact_category_en)).each do |mat| %>
+            <span class="label label-primary"><%= mat.capitalize %></span>
+        <%end%></td>
       </tr>
       <tr>
         <td>Artifact Compositions</td>
-        <td><% (eval(@artifact.materiaux)).each do |mat| %>
-            <span class="label label-danger"><%= mat %></span>
+        <td><% (eval(@artifact.artifact_composition_general_en)).each do |mat| %>
+            <span class="label label-primary"><%= mat.capitalize %></span>
         <%end%>
         </td>
       </tr>
@@ -135,7 +139,7 @@ puts (eval(valeur2)[lang.to_sym])
               </div>
 
 <script type="text/javascript">
-             var info = <%= eval(@artifact.exif).to_json %>
+             var info = <%#= eval(@artifact.exif).to_json %>
              console.log(info)
   
 </script>
