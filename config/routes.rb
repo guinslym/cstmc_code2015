@@ -1,11 +1,25 @@
 Rails.application.routes.draw do
-  resources :users
+
+  resources :artifacts
+
+  resources "artefacts", only: [:index, :show] do
+    collection { post :search, to: 'artefacts#search' }
+  end
+  get 'artefacts/index'
+  get 'welcome/advanced_search'
+
+  get 'artefacts/show'
+
+  get 'welcome/index'
+  get 'welcome/recherche'
+  get "welcome/download_pdf"
+  get "welcome/download_jpeg" => 'welcome#download_jpeg'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'users#index'
+  root 'welcome#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

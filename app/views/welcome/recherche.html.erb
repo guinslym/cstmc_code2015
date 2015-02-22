@@ -1,0 +1,90 @@
+<%= search_form_for @search do |f| %>
+  <div class="field">
+    <%= f.label :objname_cont, "Name" %>
+    <%= f.text_field :objname_cont %>
+  </div>
+    
+
+<div class="actions">
+  <%= f.submit %>
+</div>
+<% end %>
+
+
+<hr/>
+<% 
+#application helper
+@composition = []
+@artefacts.each do |artefact| 
+    materiaux = eval(artefact.materiaux)
+    if materiaux.size > 0
+      materiaux.each do |mat|
+        if !mat.eql?('[]')
+          @composition.append(mat)
+          @composition.uniq!
+        end
+      end
+    end
+  end
+
+#li-helper
+
+def find_materiaux(materiaux_value)
+  materiaux_value = eval(materiaux_value)
+  @obj_composition =[]
+  if materiaux_value.size > 0
+    materiaux_value.each do |mat|
+      if !mat.eql?('[]')
+        @obj_composition.append(mat)
+      end
+    end#do
+  else
+    return ' '
+  end#if > 0
+  return @obj_composition.join(' ')
+end
+
+  %>
+
+<%#= @composition %>
+
+<section class="cd-gallery">
+
+      <ul>
+       <% 
+          color = ['color-1', 'color-2']
+          radio = ['radio2', 'radio3']
+          option = ['option1', 'option2', 'option3', 'option4']
+
+          def find_color(color)
+            if color.eql?('1') || color.eql?('5')
+                return 'color-1'
+            else
+                return 'color-2'
+            end
+                
+                
+          end
+          %>
+                
+          <% 
+          compte = 0
+          @artefacts.each do |artefact| 
+            compte = compte + 1
+            %>
+            <li class="mix  <%= artefact.color %> <%= obj = find_materiaux(artefact.materiaux) %> <%= option.shuffle.first %>">
+            <%= link_to (image_tag "rb/thumb/#{artefact.image_link.split("/")[-1]}", :tag =>"Image ", :class => "emr example#{compte}", data: {zoom_image: "#{artefact.image_link}"}), artefact %>
+            <%#= image_tag "rb/#{artefact.image_link}", :tag =>"Image " %>
+            <div class="show-title" style="background-color:white; padding:5px; margin: auto 0;">
+              <h5><%= artefact.objname %></h5>
+            </div>
+            </li>
+            <% end %>
+        <li class="gap"></li>
+        <li class="gap"></li>
+        <li class="gap"></li>
+      </ul>
+      <div class="cd-fail-message">No results found</div>
+    </section> <!-- cd-gallery -->
+
+    <%= render "shared/facets", foo: @composition %>

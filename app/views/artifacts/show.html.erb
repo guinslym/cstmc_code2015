@@ -1,0 +1,203 @@
+<p id="notice"><%= notice %></p>
+
+
+<style type="text/css">
+  body{
+    background-color: #fff;//#F2F2F2;
+  }
+
+.benefit {
+    background-color: #fff;
+    margin: 15px 0;
+    padding: 30px;
+    text-align: center;
+}
+ .benefit {
+    background-color: #fff;
+}
+
+.benefit-icon {
+    color: #f3ae73;
+}
+.benefit-icon {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+.benefit-title {
+    font-family: "Montserrat",sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.benefit img{
+  max-width: 100%;
+  max-height: 595px;
+}
+table>tr>td.show_content:first-child{
+  font-weight: bolder;
+}
+td:first-child {
+  font-weight: bolder;
+  width: 25%;
+}
+
+td{
+  text-align: left;
+}
+</style>
+
+<%
+valeur = {language: [
+:en => "Fire Engine",
+:fr => "Véhicule d'incendie"
+]
+}.to_s
+lang = 4 > 0 ? 'en' : 'fr'
+valeur = eval(valeur)
+puts valeur['language'.to_sym][0][lang.to_sym]
+
+valeur2 = {
+:en => "Fire Engine",
+:fr => "Véhicule d'incendie"
+}.to_s
+puts (eval(valeur2)[lang.to_sym])
+ %>
+
+<div class="container">
+
+
+<div class="col-lg-10 col-lg-offset-1">
+                <div class="benefit">
+                <span data-animation="bounceIn" class="benefit-icon fa fa-code bounceIn animated done-animation"></span>
+                <img id="zoom" src="<%= @artifact.image_link %>" data-zoom-image="<%= @artifact.image_link %>"  class="thumbnail" alt="<%= @artifact.objname %>"/>                 <h4 class="benefit-title"><%=  @artifact.objname %></h4>
+                <h1 class="post-title text-center"><%=  @artifact.objname %></h1>
+
+
+                <table class="table table-bordered show_content table-hover" style="background-color:#F2F2F2;">
+  <thead>
+
+  <tbody>
+      <tr>
+        <td>Dataset name</td>
+        <td>
+        <% link = @artifact.dataset_name.split("-")[0] 
+           link = 'http://donnees.techno-science.ca/en/dataset?q=' + link +'&sort=score+desc%2C+metadata_modified+desc'
+        %>
+        <a href="<%= link %>" target="_blank">
+        <%= @artifact.dataset_name %>
+        </a>
+        </td>
+      </tr>
+      <tr>
+        <td>Artifact name</td>
+        <td><%= @artifact.objname %></td>
+      </tr>
+      <tr>
+        <td>Artifact <abbr title="A Unique Catalogue number is assigned to each artifact." class="initialism" style="color:green">UID</abbr></td>
+        <td><%= @artifact.uid %></td>
+      </tr>
+      <tr>
+        <td>Assessement date</td>
+        <td><%= @artifact.date %></td>
+      </tr>
+      <tr>
+        <td>Image Link</td>
+        <td><%= @artifact.image_link %></td>
+      </tr>
+      <tr>
+        <td>Thumbnail Link</td>
+        <td><%= @artifact.image_thumbnail  %></td>
+      </tr>
+      <tr>
+        <td>Artifact Group</td>
+        <td><%= @artifact.art_group %></td>
+      </tr>
+      <tr>
+        <td>Artifact Category</td>
+        <td><%= @artifact.category %></td>
+      </tr>
+      <tr>
+        <td>Artifact Compositions</td>
+        <td><% (eval(@artifact.materiaux)).each do |mat| %>
+            <span class="label label-danger"><%= mat %></span>
+        <%end%>
+        </td>
+      </tr>
+      <tr>
+        <td>Open Data License</td>
+        <td><a href="http://open.canada.ca/en/open-government-licence-canada">Contains information licensed under the Open Government Licence – Canada.</a><br/>
+                     <span>This licence allows you to copy, modify, publish, translate, adapt, distribute, or otherwise use the information in any medium, mode, or format for any lawful purpose, so long as you acknowledge the source of the information, and provide a link to the <a href="http://open.canada.ca/en/open-government-licence-canada">licence</a> where possible.</td>
+      </tr>
+  </tbody>
+</table>
+              </div>
+
+<script type="text/javascript">
+             var info = <%= eval(@artifact.exif).to_json %>
+             console.log(info)
+  
+</script>
+
+<div class="text-left" >
+<%= link_to '<i class="fa fa-file-image-o"></i> &nbsp;Download image'.html_safe, {:controller => "welcome", :action => "download_jpeg", :id => @artifact.id}, :class => "btn btn-primary btn-sm donwnload_image", data: {disable_with: "<i class='fa fa-spinner fa-spin fa-2x'> </i> Downloading..."}, :style => "margin-bottom:30px;" %>
+</div>
+<div class="alert alert-info alert-dismissible" role="alert">
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+  <strong>Zoom:</strong> If the image above have approximately the same size than the original than the zoom level will be null. Otherwise if the original image size are bigger than the image that you see above than, the greater the zoom level effect will be. <br/>
+</div>
+
+
+<!--
+<%= link_to '<i class="fa fa-file-pdf-o"></i>
+ &nbsp;PDF'.html_safe, {:controller => "welcome", :action => "download_jpeg", :id => @artifact.id}, :class => "btn btn-warning btn-sm" %>
+ -->
+
+
+
+
+
+
+            </div>
+
+
+            
+</div>
+
+
+
+</div>
+
+<div class="container text-center" >
+<div class="row" style="margin-bottom:50px;">
+  
+<%= link_to 'Back to the results', 'javascript:history.go(-1);', :class => "btn btn-warning" %>
+</div>
+  
+</div>
+
+<style type="text/css">
+section#footer{
+  background-color: #000000;
+  min-height: 40px;
+  color: white;
+  text-align: center;
+  margin-top:100px;
+}
+</style>
+<section id="footer">
+  <h2>Hello World</h2>
+</section>
+<script type="text/javascript">
+
+
+$(function(){ 
+
+});
+
+$(window).load(function(){  
+     //initialize after images are loaded  
+      $("#zoom").elevateZoom({ zoomType : "inner", lensSize: 300, scrollZoom: true});
+});
+</script>

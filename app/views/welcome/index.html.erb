@@ -1,0 +1,52 @@
+
+
+
+<link href='http://fonts.googleapis.com/css?family=Offside' rel='stylesheet' type='text/css'>
+<style type="text/css">
+	div.tooltip, div.tooltip-arrow, div.tooltip-inner{
+		background-color: #E75A3A;
+		color:white;
+		text-shadow: none
+	}
+  span.abbr_museum{
+    //border-bottom: 1px dashed #fff;
+  }
+</style>
+
+<div data-animation="fadeIn" class="hero-heading fadeIn animated done-animation">
+
+    <h1 class="hero-title"><span  data-toggle="tooltip" data-placement="top" title="Canada Science and Technology Museum " class="abbr_museum">C.S.T.M.</span>- Image Search Engine</h1>
+    <!--
+     <h1 class="hero-title"><span  data-toggle="tooltip" data-placement="top" title="Mus&eacute;e des sciences et technologies du Canada">MCST</span>- Moteur de Recherche d'Image</h1>
+
+    -->
+    <script type="text/javascript">
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+    </script>
+
+
+
+    <p class="hero-tagline">Open Data initiative</p>
+
+</div>
+
+<div class="col-lg-10 col-lg-offset-1 text-center" style="margin-top:30px;" id="main-page">
+    
+<%= search_form_for @search, :method => "get", id: "search-form", :html => {:class=>"form-group main-form"} do |f| %>
+  <%#= text_field_tag :search, params[:search], placeholder: "Search Artefacts images", :class => "form-group main-form", :style => "height:40px;width:60%" %>
+  <%= f.search_field :objname_en_cont, :required => true, placeholder: "Search Artefacts images", :class => "form-group main-form", :style => "height:40px;width:60%" %>
+  <%= f.submit "Search Images", :name => nil, :class => 'btn btn-warning' %>
+<% end %>
+
+
+
+</div>   
+
+
+
+
+
+
+

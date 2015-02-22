@@ -1,0 +1,108 @@
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
+<style type="text/css">
+  td:nth-child(even) {text-align: right; }
+td:nth-child(odd) {text-align: right; font-weight: bolder; padding-right:10px; }
+td {padding-top: 5px; padding-bottom: 5px;}
+form input[type=search]{
+  width: 100%;
+}
+table{
+  width: 70%;
+}
+div.essaie{padding-top: 20px;}
+header.cd-header{
+  background-color: #6D6D65;
+}
+.cd-main-content {
+position: relative;
+min-height: 100vh;
+//background-color: #331D35;
+//color: white;
+}
+
+.remodal-confirm {
+    background: none repeat scroll 0 0 #f4f4f4;
+    border: 2px solid #16a085;
+    color: #16a085;
+}
+.remodal-confirm, .remodal-cancel {
+    background-clip: padding-box;
+    border-radius: 6px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 10pt;
+    margin: 0 0 5px;
+    padding: 9px 0;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.2s ease-out 0s;
+    width: 120px;
+}
+.remodal-confirm:hover, .remodal-confirm:active {
+    background: none repeat scroll 0 0 #16a085;
+    color: #f4f4f4;
+}
+
+div.body{
+  background-color: red!important;
+}
+</style>
+<div class="remodal animated fadeInUp" data-remodal-id="show" >
+    <h1>Advanced Search</h1>
+    <p>
+        Fill at least one field.
+    </p>
+    
+    <div class="essaie">
+      
+      <%= search_form_for @search do |f| %>
+<table>
+  <tr>
+    <td class="first">
+  <%= f.label :category_cont, "Artefact Category" %>
+    </td>
+    <td>
+  <%= f.search_field :category_cont %>
+    </td>
+  </tr>
+  <tr>
+    <td>
+  <%= f.label :art_group_cont, "Artefact Group" %>
+    </td>
+    <td>
+  <%= f.search_field :art_group_cont %>
+    </td>
+  </tr>
+  <tr>
+    <td>
+  <%= f.label :color_eq %>
+    </td>
+    <td>
+  <%= f.search_field :color_eq %>
+    </td>
+  </tr>
+  <tr>
+    <td>
+  <%= f.label :materiaux_cont, "Composition" %>
+    </td>
+    <td>
+  <%= f.search_field :materiaux_cont %>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <div class="field">
+  
+      <%= f.submit 'Submit', :class => 'remodal-confirm' %>
+</div>
+    </td>
+  </tr>
+</table>
+<% end %>
+  
+
+
+    </div>
+     </div>
+
+

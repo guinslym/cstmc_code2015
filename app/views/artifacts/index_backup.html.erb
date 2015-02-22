@@ -1,0 +1,75 @@
+<h1>Listing artifacts</h1>
+<style type="text/css">
+  .imga{
+    max-height: 210px;
+  }
+</style>
+
+<%= paginate @artifacts %>
+
+<%= form_tag(artifacts_path, :method => "get", id: "search-form") do %>
+  <%= text_field_tag :search, params[:search], placeholder: "Search Users" %>
+  <%= submit_tag "Search", :name => nil %>
+<% end %>
+<table>
+  <thead>
+    <tr>
+      <th>Image link</th>
+      <!--
+      <th>Objtype</th>
+      <th>About</th>
+      <th>Uid</th>
+      -->
+      <th>Image thumbnail</th>
+      <th>Color</th>
+      <th>Height</th>
+      <th>Width</th>
+      <th>Landscape</th>
+      <th>Objname</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @artifacts.each do |artefact| %>
+      <tr>
+        <td><%= artefact.image_link %></td>
+        <!--
+        <td><%= artefact.objtype %></td>
+        <td><%= artefact.about %></td>
+        <td><%= artefact.uid %></td>
+        -->
+        <td><%#= image_tag "http://source.techno-science.ca/images/#{artefact.image_link}", :class => 'imga'%></td>
+        <td><%= artefact.color %></td>
+        <td><%= artefact.height %></td>
+        <td><%= artefact.width %></td>
+        <td><%= artefact.landscape %></td>
+        <td><%= artefact.objname %></td>
+        <td><%= link_to 'Show', artefact %></td>
+        <td><%#= link_to 'Edit', edit_artefact_path(artefact) %></td>
+        <td><%#= link_to 'Destroy', artefact, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+<style type="text/css">
+  .imgur{
+    position: relative;
+    float: left;
+    width:  100px;
+    height: 100px;
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover;
+    margin: 2px;
+    overflow:hidden;  
+  }
+</style>
+<h4>Products</h4>
+<% @artifacts.each do |artefact| %>
+<%= image_tag "rb/#{artefact.image_link}", :class => 'imgur'%>
+
+<% end %>
+<%#= link_to 'New Artefact', new_artefact_path %>

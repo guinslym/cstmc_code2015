@@ -1,0 +1,121 @@
+<style type="text/css">
+  .loader {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url('http://smallenvelop.com/wp-content/uploads/2014/08/Preloader_3.gif') 50% 50% no-repeat rgb(249,249,249);
+}
+</style>
+
+<%= paginate @artifacts,  :outer_window => 4, :window =>  4  %>
+
+<% 
+#application helper
+@composition = []
+@artifacts.each do |artefact| 
+    materiaux = eval(artefact.artifact_composition_general_en)
+    if materiaux.size > 0
+      materiaux.each do |mat|
+        if !mat.eql?('[]')
+          @composition.append(mat)
+          @composition.uniq!
+        end
+      end
+    end
+  end
+
+#li-helper
+
+def find_materiaux(materiaux_value)
+  materiaux_value = eval(materiaux_value)
+  @obj_composition =[]
+  if materiaux_value.size > 0
+    materiaux_value.each do |mat|
+      if !mat.eql?('[]')
+        @obj_composition.append(mat)
+      end
+    end#do
+  else
+    return ' '
+  end#if > 0
+  return @obj_composition.join(' ')
+end
+
+  %>
+
+<%
+group =[]
+@artifacts.each do |artefact|
+artefact = eval(artefact.artifact_group_en)
+artefact.each {|n| group.push(n) if !n.empty?}
+
+end
+@group_artifact = group.uniq!
+%>
+<%#= @composition %>
+<% 
+
+def find_group(art_group)
+artefact = []
+art_group = eval(art_group)
+art_group.each do |n|
+  if n.include?(" ")
+    n.sub! " ", "-"
+  end
+  artefact.append(n)
+end
+return artefact.join(" ")
+end
+ %>
+<section class="cd-gallery">
+
+      <ul>
+       <% 
+          color = ['color-1', 'color-2']
+          radio = ['radio2', 'radio3']
+          option = ['option1', 'option2', 'option3', 'option4']
+
+          def find_color(color)
+            if color.eql?('1') || color.eql?('5')
+                return 'color-1'
+            else
+                return 'color-2'
+            end
+                
+                
+          end
+          %>
+                
+          <% 
+          compte = 0
+          @artifacts.each do |artefact| 
+            compte = compte + 1
+            %>
+            <li class="mix <%= find_group(artefact.artifact_group_en) %> <%= color.shuffle.first %> <%= obj = find_materiaux(artefact.artifact_composition_general_en) %> <%= option.shuffle.first %>">
+            <% Rails.env.production?  %>
+            <%#= link_to (image_tag "rb/thumb/#{artefact.image_original.split("/")[-1]}", :tag =>"Image ", :class => "emr example#{compte}", data: {zoom_image: "#{artefact.image_original}"}), artefact %>
+            <%= link_to (image_tag "#{artefact.image_original}", :tag =>"Image ", :class => "emr example#{compte}"), artefact %>
+            <div class="show-title" style="background-color:white; padding:5px; margin: auto 0;">
+              <h5><%= eval(artefact.artifact_group_en).first %></h5>
+            </div>
+            </li>
+            <% end %>
+        <li class="gap"></li>
+        <li class="gap"></li>
+        <li class="gap"></li>
+      </ul>
+      <div class="cd-fail-message">No results found</div>
+    </section> <!-- cd-gallery -->
+
+    <%= render "shared/facets", foo: @composition, baz: @group_artifact %>
+
+    <div class="loader"></div>
+
+    <script type="text/javascript">
+$(window).load(function() {
+  $(".loader").fadeOut("slow");
+})
+</script>

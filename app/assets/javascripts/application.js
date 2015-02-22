@@ -12,5 +12,8 @@
 //
 //= require jquery
 //= require jquery_ujs
+//require okzoom
+//= require mixitup
 //= require turbolinks
+//= require bootstrap-sprockets
 //= require_tree .

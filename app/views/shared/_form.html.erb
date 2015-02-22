@@ -1,0 +1,76 @@
+<hr/>
+
+<%= search_form_for @search do |f| %>
+  <%= f.condition_fields do |c| %>
+    <div class="field">
+      <%= c.attribute_fields do |a| %>
+        <% a.attribute_select %>
+      <% end %>
+      <%= c.predicate_select %>
+      <%= c.value_fields do |v| %>
+        <%= v.text_field :value %>
+      <% end %>
+    </div>
+  <% end %>
+<div class="actions">
+  <%= f.submit %>
+</div>
+<% end %>
+
+
+
+<div class="remodal animated fadeInUp" data-remodal-id="show" >
+    <h1>Advanced Search</h1>
+    <p>
+        Fill all the field.
+    </p>
+    
+    <div class="essaie">
+      
+      <%= search_form_for @search do |f| %>
+<table>
+  <tr>
+    <td class="first">
+  <%= f.label :category_cont, "Artefact Category" %>
+    </td>
+    <td>
+  <%= f.search_field :category_cont, :required => true %>
+    </td>
+  </tr>
+  <tr>
+    <td>
+  <%= f.label :art_group_cont, "Artefact Group" %>
+    </td>
+    <td>
+  <%= f.search_field :art_group_cont, :required => true %>
+    </td>
+  </tr>
+  <tr>
+    <td>
+  <%= f.label :color_eq %>
+    </td>
+    <td>
+  <%= f.search_field :color_eq, :required => true %>
+    </td>
+  </tr>
+  <tr>
+    <td>
+  <%= f.label :materiaux_cont, "Composition" %>
+    </td>
+    <td>
+  <%= f.search_field :materiaux_cont, :required => true %>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <div class="field">
+  
+      <%= f.submit 'Submit', :class => 'remodal-confirm' %>
+</div>
+    </td>
+  </tr>
+</table>
+<% end %>
+  
+    </div>
+     </div>

@@ -1,0 +1,78 @@
+class WelcomeController < ApplicationController
+  #before_action :set_artefact, only: [:download_jpeg]
+
+  respond_to :html
+
+
+  def index
+    @search = Artifact.search(params[:q])
+    render layout: "essaie"
+  end
+
+  def download_pdf
+  	#Doesnt need the pdf .. this is extra in this project
+    send_file(
+      "#{Rails.root}/public/your_file.pdf",
+      filename: "your_custom_file_name.pdf",
+      type: "application/pdf"
+    )
+  end
+
+#advance multi-select form
+=begin
+def advanced_search
+    @search = Artifact.search(params[:q])
+    if(!params[:q].nil?)
+    @search = Artifact.search(params[:q])
+    @artifacts = @search.result.page(params[:page]).per(25)
+ @search.build_condition if @search.conditions.empty?
+@search.build_sort if @search.sorts.empty?
+    respond_with(@artifacts)
+  else
+    @search.build_condition if @search.conditions.empty?
+    @artifacts = Artifact.page(params[:page]).per(25)
+    respond_with(@artifacts)
+  end
+end
+=end
+
+def advanced_search
+@search = Artifact.search(params[:q])
+#@search.build_condition
+    @artifacts = @search.result
+end
+
+  def download_jpeg
+    if params.size.eql?(3)  #params must only accept 'id'
+    	require 'open-uri'
+      @artefact = Artifact.find(params[:id])
+    	url = @artefact.image_link
+      filename = 'can-tech-museum-' + @artefact.uid + ".jpg"#url.split('/')[-1]
+    	data = open(url).read
+    	send_data data, :disposition => 'attachment', :filename => filename
+    else
+      #send a random image
+      require 'open-uri'
+      url = 'http://source.techno-science.ca/images/1986.0468.001.aa.cs.jpg'
+      data = open(url).read
+      send_data data, :disposition => 'attachment', :filename => 'wrong-parameter.jpeg'
+    end
+  end
+
+  def recherche
+     @search = Artifact.search(params[:q])
+    if(!params[:q].nil?)
+    @search = Artifact.search(params[:q])
+    @artifacts = @search.result
+    @search.build_condition
+    respond_with(@artifacts)
+  else
+    @artifacts = Artifact.limit(40)
+  end
+
+  end
+
+
+
+
+end

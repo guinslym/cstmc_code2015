@@ -1,0 +1,1535 @@
+[
+    {
+        "discipline": {
+            "fr": "Artefact", 
+            "en": "Artifact"
+        }, 
+        "unique_identifier": "540583a3", 
+        "artefacts_categorie": [
+            {
+                "fr": "Divers", 
+                "en": "Miscellaneous"
+            }
+        ], 
+        "artefact_references": [
+            "Museum Documents in Supp. Info."
+        ], 
+        "image": {
+            "image_link": "http://source.techno-science.ca/images/1988.0188.001.aa.cs.jpg", 
+            "image_thumbnail": "http://source.techno-science.ca/images/1988.0188.001.aa.cs.thumb.jpg"
+        }, 
+        "artefacts_sub_categorie": [], 
+        "objname": {
+            "fr": "Bo\u00eete \u00e0 saumon", 
+            "en": "Salmon Box"
+        }, 
+        "artefacts_group": [
+            {
+                "fr": "Service des p\u00eaches", 
+                "en": "Fisheries"
+            }
+        ], 
+        "dataset_name": "fisheries-service-des-peches.xml", 
+        "artefacts_composition_general": [
+            {
+                "fr": "bois", 
+                "en": "wood"
+            }
+        ], 
+        "art_location": "2380", 
+        "catalogue_number": "1988.0188", 
+        "assigned_date": "1988", 
+        "artefacts_composition_specific": []
+    }, 
+    {
+        "discipline": {
+            "fr": "Artefact", 
+            "en": "Artifact"
+        }, 
+        "unique_identifier": "b811ac14", 
+        "artefacts_categorie": [
+            {
+                "fr": "Outils et \u00e9quipement", 
+                "en": "Tools & equipment"
+            }
+        ], 
+        "artefact_references": [
+            "1) COPY OF COLLECTION INVENTORY (790748 S.I.)"
+        ], 
+        "image": {
+            "image_link": "http://source.techno-science.ca/images/1979.0870.001.aa.cs.jpg", 
+            "image_thumbnail": "http://source.techno-science.ca/images/1979.0870.001.aa.cs.thumb.jpg"
+        }, 
+        "artefacts_sub_categorie": [
+            {
+                "fr": "R\u00e9colte", 
+                "en": "Harvesting"
+            }
+        ], 
+        "objname": {
+            "fr": "Filet", 
+            "en": "Net"
+        }, 
+        "artefacts_group": [
+            {
+                "fr": "Service des p\u00eaches", 
+                "en": "Fisheries"
+            }
+        ], 
+        "dataset_name": "fisheries-service-des-peches.xml", 
+        "artefacts_composition_general": [
+            {
+                "fr": "m\u00e9tal", 
+                "en": "metal"
+            }, 
+            {
+                "fr": "fibre", 
+                "en": "fibre"
+            }, 
+            {
+                "fr": "bois", 
+                "en": "wood"
+            }
+        ], 
+        "art_location": "2475", 
+        "catalogue_number": "1979.0870", 
+        "assigned_date": "1979", 
+        "artefacts_composition_specific": [
+            {
+                "fr": "coton", 
+                "en": "cotton"
+            }, 
+            {
+                "fr": "bambou", 
+                "en": "bamboo"
+            }
+        ]
+    }, 
+    {
+        "discipline": {
+            "fr": "Artefact", 
+            "en": "Artifact"
+        }, 
+        "unique_identifier": "87cb9f9b", 
+        "artefacts_categorie": [
+            {
+                "fr": "Transfert de l'image", 
+                "en": "Image transfer"
+            }, 
+            {
+                "fr": "Divers", 
+                "en": "Miscellaneous"
+            }
+        ], 
+        "artefact_references": [
+            "Museum Documents in Supp. Info."
+        ], 
+        "image": {
+            "image_link": "http://source.techno-science.ca/images/1979.0573.001.aa.cs.jpg", 
+            "image_thumbnail": "http://source.techno-science.ca/images/1979.0573.001.aa.cs.thumb.jpg"
+        }, 
+        "artefacts_sub_categorie": [
+            {
+                "fr": "Bosselage", 
+                "en": "Embossing"
+            }
+        ], 
+        "objname": {
+            "fr": "Presse \u00e0 gaufrer", 
+            "en": "Embossing Press"
+        }, 
+        "artefacts_group": [
+            {
+                "fr": "Imprimerie", 
+                "en": "Printing"
+            }, 
+            {
+                "fr": "Service des p\u00eaches", 
+                "en": "Fisheries"
+            }
+        ], 
+        "dataset_name": "fisheries-service-des-peches.xml", 
+        "artefacts_composition_general": [
+            {
+                "fr": "m\u00e9tal", 
+                "en": "metal"
+            }
+        ], 
+        "art_location": "2475", 
+        "catalogue_number": "1979.0573", 
+        "assigned_date": "1979", 
+        "artefacts_composition_specific": []
+    }, 
+    {
+        "discipline": {
+            "fr": "Artefact", 
+            "en": "Artifact"
+        }, 
+        "unique_identifier": "33cafcb9", 
+        "artefacts_categorie": [
+            {
+                "fr": "Outils et \u00e9quipement", 
+                "en": "Tools & equipment"
+            }
+        ], 
+        "artefact_references": [
+            "SEE 850215 S.I."
+        ], 
+        "image": {
+            "image_link": "http://source.techno-science.ca/images/1985.0287.001.aa.cs.jpg", 
+            "image_thumbnail": "http://source.techno-science.ca/images/1985.0287.001.aa.cs.thumb.jpg"
+        }, 
+        "artefacts_sub_categorie": [
+            {
+                "fr": "R\u00e9colte", 
+                "en": "Harvesting"
+            }
+        ], 
+        "objname": {
+            "fr": "Canne \u00e0 p\u00eache", 
+            "en": "Fishing Rod"
+        }, 
+        "artefacts_group": [
+            {
+                "fr": "Service des p\u00eaches", 
+                "en": "Fisheries"
+            }
+        ], 
+        "dataset_name": "fisheries-service-des-peches.xml", 
+        "artefacts_composition_general": [
+            {
+                "fr": "bois", 
+                "en": "wood"
+            }, 
+            {
+                "fr": "synth\u00e9tique", 
+                "en": "synthetic"
+            }
+        ], 
+        "art_location": "2380", 
+        "catalogue_number": "1985.0287", 
+        "assigned_date": "1985", 
+        "artefacts_composition_specific": [
+            {
+                "fr": "bambou", 
+                "en": "bamboo"
+            }, 
+            {
+                "fr": "plastique", 
+                "en": "plastic"
+            }
+        ]
+    }, 
+    {
+        "discipline": {
+            "fr": "Artefact", 
+            "en": "Artifact"
+        }, 
+        "unique_identifier": "342a2272", 
+        "artefacts_categorie": [
+            {
+                "fr": "Outils et \u00e9quipement", 
+                "en": "Tools & equipment"
+            }
+        ], 
+        "artefact_references": [
+            "SEE 850215 S.I."
+        ], 
+        "image": {
+            "image_link": "http://source.techno-science.ca/images/1985.0286.001.aa.cs.jpg", 
+            "image_thumbnail": "http://source.techno-science.ca/images/1985.0286.001.aa.cs.thumb.jpg"
+        }, 
+        "artefacts_sub_categorie": [
+            {
+                "fr": "R\u00e9colte", 
+                "en": "Harvesting"
+            }
+        ], 
+        "objname": {
+            "fr": "Canne \u00e0 p\u00eache", 
+            "en": "Fishing Rod"
+        }, 
+        "artefacts_group": [
+            {
+                "fr": "Service des p\u00eaches", 
+                "en": "Fisheries"
+            }
+        ], 
+        "dataset_name": "fisheries-service-des-peches.xml", 
+        "artefacts_composition_general": [
+            {
+                "fr": "bois", 
+                "en": "wood"
+            }, 
+            {
+                "fr": "synth\u00e9tique", 
+                "en": "synthetic"
+            }
+        ], 
+        "art_location": "2380", 
+        "catalogue_number": "1985.0286", 
+        "assigned_date": "1985", 
+        "artefacts_composition_specific": [
+            {
+                "fr": "bambou", 
+                "en": "bamboo"
+            }, 
+            {
+                "fr": "plastique", 
+                "en": "plastic"
+            }
+        ]
+    }, 
+    {
+        "discipline": {
+            "fr": "Artefact", 
+            "en": "Artifact"
+        }, 
+        "unique_identifier": "a9204bdc", 
+        "artefacts_categorie": [
+            {
+                "fr": "Outils et \u00e9quipement", 
+                "en": "Tools & equipment"
+            }
+        ], 
+        "artefact_references": [], 
+        "image": {
+            "image_link": "http://source.techno-science.ca/images/1968.0238.001.aa.cs.jpg", 
+            "image_thumbnail": "http://source.techno-science.ca/images/1968.0238.001.aa.cs.thumb.jpg"
+        }, 
+        "artefacts_sub_categorie": [
+            {
+                "fr": "R\u00e9colte", 
+                "en": "Harvesting"
+            }
+        ], 
+        "objname": {
+            "fr": "Brasier", 
+            "en": "Fire Basket"
+        }, 
+        "artefacts_group": [
+            {
+                "fr": "Service des p\u00eaches", 
+                "en": "Fisheries"
+            }
+        ], 
+        "dataset_name": "fisheries-service-des-peches.xml", 
+        "artefacts_composition_general": [
+            {
+                "fr": "m\u00e9tal", 
+                "en": "metal"
+            }
+        ], 
+        "art_location": "2475", 
+        "catalogue_number": "1968.0238", 
+        "assigned_date": "1968", 
+        "artefacts_composition_specific": []
+    }, 
+    {
+        "discipline": {
+            "fr": "Artefact", 
+            "en": "Artifact"
+        }, 
+        "unique_identifier": "3311358d", 
+        "artefacts_categorie": [
+            {
+                "fr": "Outils et \u00e9quipement", 
+                "en": "Tools & equipment"
+            }
+        ], 
+        "artefact_references": [], 
+        "image": {
+            "image_link": "http://source.techno-science.ca/images/1968.0241.001.aa.cs.jpg", 
+            "image_thumbnail": "http://source.techno-science.ca/images/1968.0241.001.aa.cs.thumb.jpg"
+        }, 
+        "artefacts_sub_categorie": [
+            {
+                "fr": "R\u00e9colte", 
+                "en": "Harvesting"
+            }
+        ], 
+        "objname": {
+            "fr": "Harpon", 
+            "en": "Spear"
+        }, 
+        "artefacts_group": [
+            {
+                "fr": "Service des p\u00eaches", 
+                "en": "Fisheries"
+            }
+        ], 
+        "dataset_name": "fisheries-service-des-peches.xml", 
+        "artefacts_composition_general": [
+            {
+                "fr": "m\u00e9tal", 
+                "en": "metal"
+            }
+        ], 
+        "art_location": "LOST", 
+        "catalogue_number": "1968.0241", 
+        "assigned_date": "1968", 
+        "artefacts_composition_specific": [
+            {
+                "fr": "fer", 
+                "en": "iron"
+            }
+        ]
+    }, 
+    {
+        "discipline": {
+            "fr": "Artefact", 
+            "en": "Artifact"
+        }, 
+        "unique_identifier": "2c68dcd2", 
+        "artefacts_categorie": [
+            {
+                "fr": "Outils et \u00e9quipement", 
+                "en": "Tools & equipment"
+            }
+        ], 
+        "artefact_references": [], 
+        "image": {
+            "image_link": "http://source.techno-science.ca/images/1977.0381.001.aa.cs.jpg", 
+            "image_thumbnail": "http://source.techno-science.ca/images/1977.0381.001.aa.cs.thumb.jpg"
+        }, 
+        "artefacts_sub_categorie": [
+            {
+                "fr": "R\u00e9colte", 
+                "en": "Harvesting"
+            }
+        ], 
+        "objname": {
+            "fr": "Ligne de p\u00eache \u00e0 la turlutte", 
+            "en": "Jigging Line"
+        }, 
+        "artefacts_group": [
+            {
+                "fr": "Service des p\u00eaches", 
+                "en": "Fisheries"
+            }
+        ], 
+        "dataset_name": "fisheries-service-des-peches.xml", 
+        "artefacts_composition_general": [
+            {
+                "fr": "bois", 
+                "en": "wood"
+            }, 
+            {
+                "fr": "fibre", 
+                "en": "fibre"
+            }, 
+            {
+                "fr": "m\u00e9tal", 
+                "en": "metal"
+            }
+        ], 
+        "art_location": "2475", 
+        "catalogue_number": "1977.0381", 
+        "assigned_date": "1977", 
+        "artefacts_composition_specific": []
+    }, 
+    {
+        "discipline": {
+            "fr": "Artefact", 
+            "en": "Artifact"
+        }, 
+        "unique_identifier": "b9e5f451", 
+        "artefacts_categorie": [
+            {
+                "fr": "Outils et \u00e9quipement", 
+                "en": "Tools & equipment"
+            }
+        ], 
+        "artefact_references": [
+            "Museum Documents in Supp. Info."
+        ], 
+        "image": {
+            "image_link": "http://source.techno-science.ca/images/1982.0002.001.aa.cs.jpg", 
+            "image_thumbnail": "http://source.techno-science.ca/images/1982.0002.001.aa.cs.thumb.jpg"
+        }, 
+        "artefacts_sub_categorie": [
+            {
+                "fr": "R\u00e9colte", 
+                "en": "Harvesting"
+            }
+        ], 
+        "objname": {
+            "fr": "Boule flotteur", 
+            "en": "Float Ball"
+        }, 
+        "artefacts_group": [
+            {
+                "fr": "Service des p\u00eaches", 
+                "en": "Fisheries"
+            }
+        ], 
+        "dataset_name": "fisheries-service-des-peches.xml", 
+        "artefacts_composition_general": [
+            {
+                "fr": "m\u00e9tal", 
+                "en": "metal"
+            }
+        ], 
+        "art_location": "2475", 
+        "catalogue_number": "1982.0002", 
+        "assigned_date": "1982", 
+        "artefacts_composition_specific": []
+    }, 
+    {
+        "discipline": {
+            "fr": "Artefact", 
+            "en": "Artifact"
+        }, 
+        "unique_identifier": "fc16bc77", 
+        "artefacts_categorie": [
+            {
+                "fr": "Outils et \u00e9quipement", 
+                "en": "Tools & equipment"
+            }
+        ], 
+        "artefact_references": [
+            "1) Fisheries and Oceans, Underwater World. Atlantic Fishing Methods, 1989, p. 6.", 
+            "2) Marcel Moussette, Fishing Methods Used in the St. Lawrence River and Gulf, Parks Canada, no. 22, History and Archaeology, 1979.", 
+            "3) The American Lobster: History of Lobster Fishing & Processing, http://www.parl.ns.ca/lobster/history.htm", 
+            "4) Maritime Fisheries Museum, Lunenburg, Ralph Getson."
+        ], 
+        "image": {
+            "image_link": "http://source.techno-science.ca/images/1979.0874.001.aa.cs.jpg", 
+            "image_thumbnail": "http://source.techno-science.ca/images/1979.0874.001.aa.cs.thumb.jpg"
+        }, 
+        "artefacts_sub_categorie": [
+            {
+                "fr": "R\u00e9colte", 
+                "en": "Harvesting"
+            }
+        ], 
+        "objname": {
+            "fr": "Casier \u00e0 homard", 
+            "en": "Lobster Trap"
+        }, 
+        "artefacts_group": [
+            {
+                "fr": "Service des p\u00eaches", 
+                "en": "Fisheries"
+            }
+        ], 
+        "dataset_name": "fisheries-service-des-peches.xml", 
+        "artefacts_composition_general": [
+            {
+                "fr": "bois", 
+                "en": "wood"
+            }, 
+            {
+                "fr": "fibre", 
+                "en": "fibre"
+            }, 
+            {
+                "fr": "pierre", 
+                "en": "stone"
+            }
+        ], 
+        "art_location": "2475", 
+        "catalogue_number": "1979.0874", 
+        "assigned_date": "1979", 
+        "artefacts_composition_specific": [
+            {
+                "fr": "coton", 
+                "en": "cotton"
+            }
+        ]
+    }, 
+    {
+        "discipline": {
+            "fr": "Artefact", 
+            "en": "Artifact"
+        }, 
+        "unique_identifier": "8b632f4e", 
+        "artefacts_categorie": [
+            {
+                "fr": "Outils et \u00e9quipement", 
+                "en": "Tools & equipment"
+            }
+        ], 
+        "artefact_references": [
+            "1) Jean-Pierre Proulx, La p\u00eache de la baleine dans l'Atlantique Nord jusqu'au milieu du X1Xe si\u00e8cle, Parcs Canada, 1986.", 
+            "2) W. Gillies Ross, Arctic Whalers Icy Seas, 1985.", 
+            "3) Website: http://www.civilisations.ca/cmc/exhibitions/hist/canp1/ca04fra.shtml", 
+            "4) Website: www.heritage.nf.ca/exploration/basque"
+        ], 
+        "image": {
+            "image_link": "http://source.techno-science.ca/images/1970.0529.001.aa.cs.jpg", 
+            "image_thumbnail": "http://source.techno-science.ca/images/1970.0529.001.aa.cs.thumb.jpg"
+        }, 
+        "artefacts_sub_categorie": [
+            {
+                "fr": "Traitement", 
+                "en": "Processing"
+            }
+        ], 
+        "objname": {
+            "fr": "D\u00e9peceur de baleine", 
+            "en": "Whale Flenser"
+        }, 
+        "artefacts_group": [
+            {
+                "fr": "Service des p\u00eaches", 
+                "en": "Fisheries"
+            }
+        ], 
+        "dataset_name": "fisheries-service-des-peches.xml", 
+        "artefacts_composition_general": [
+            {
+                "fr": "bois", 
+                "en": "wood"
+            }, 
+            {
+                "fr": "m\u00e9tal", 
+                "en": "metal"
+            }
+        ], 
+        "art_location": "2475", 
+        "catalogue_number": "1970.0529", 
+        "assigned_date": "1970", 
+        "artefacts_composition_specific": [
+            {
+                "fr": "acier", 
+                "en": "steel"
+            }
+        ]
+    }, 
+    {
+        "discipline": {
+            "fr": "Artefact", 
+            "en": "Artifact"
+        }, 
+        "unique_identifier": "ff8bb569", 
+        "artefacts_categorie": [
+            {
+                "fr": "Outils et \u00e9quipement", 
+                "en": "Tools & equipment"
+            }
+        ], 
+        "artefact_references": [], 
+        "image": {
+            "image_link": "http://source.techno-science.ca/images/1981.1616.001.aa.cs.jpg", 
+            "image_thumbnail": "http://source.techno-science.ca/images/1981.1616.001.aa.cs.thumb.jpg"
+        }, 
+        "artefacts_sub_categorie": [
+            {
+                "fr": "R\u00e9colte", 
+                "en": "Harvesting"
+            }
+        ], 
+        "objname": {
+            "fr": "Harpon", 
+            "en": "Harpoon"
+        }, 
+        "artefacts_group": [
+            {
+                "fr": "Service des p\u00eaches", 
+                "en": "Fisheries"
+            }
+        ], 
+        "dataset_name": "fisheries-service-des-peches.xml", 
+        "artefacts_composition_general": [
+            {
+                "fr": "m\u00e9tal", 
+                "en": "metal"
+            }
+        ], 
+        "art_location": "2475", 
+        "catalogue_number": "1981.1616", 
+        "assigned_date": "1981", 
+        "artefacts_composition_specific": []
+    }, 
+    {
+        "discipline": {
+            "fr": "Artefact", 
+            "en": "Artifact"
+        }, 
+        "unique_identifier": "ac61b7a0", 
+        "artefacts_categorie": [
+            {
+                "fr": "Outils et \u00e9quipement", 
+                "en": "Tools & equipment"
+            }
+        ], 
+        "artefact_references": [
+            "1) SEE 970064 SUPP. INFO."
+        ], 
+        "image": {
+            "image_link": "http://source.techno-science.ca/images/1997.0188.001.aa.cs.jpg", 
+            "image_thumbnail": "http://source.techno-science.ca/images/1997.0188.001.aa.cs.thumb.jpg"
+        }, 
+        "artefacts_sub_categorie": [
+            {
+                "fr": "Mesure", 
+                "en": "Measuring"
+            }
+        ], 
+        "objname": {
+            "fr": "Mesure de crabe des neiges", 
+            "en": "Snow crab Gauge"
+        }, 
+        "artefacts_group": [
+            {
+                "fr": "Service des p\u00eaches", 
+                "en": "Fisheries"
+            }
+        ], 
+        "dataset_name": "fisheries-service-des-peches.xml", 
+        "artefacts_composition_general": [
+            {
+                "fr": "m\u00e9tal", 
+                "en": "metal"
+            }
+        ], 
+        "art_location": "2421", 
+        "catalogue_number": "1997.0188", 
+        "assigned_date": "1997", 
+        "artefacts_composition_specific": []
+    }, 
+    {
+        "discipline": {
+            "fr": "Artefact", 
+            "en": "Artifact"
+        }, 
+        "unique_identifier": "b9689eb1", 
+        "artefacts_categorie": [
+            {
+                "fr": "Outils et \u00e9quipement", 
+                "en": "Tools & equipment"
+            }
+        ], 
+        "artefact_references": [
+            "1) CURATOR'S ACQUSITION PROPOSAL IN SUPP.INFO.", 
+            "2) SEE 950500 SUPP. INFO."
+        ], 
+        "image": {
+            "image_link": "http://source.techno-science.ca/images/1995.0502.001.aa.cs.jpg", 
+            "image_thumbnail": "http://source.techno-science.ca/images/1995.0502.001.aa.cs.thumb.jpg"
+        }, 
+        "artefacts_sub_categorie": [
+            {
+                "fr": "Mesure", 
+                "en": "Measuring"
+            }
+        ], 
+        "objname": {
+            "fr": "Calibre de homard", 
+            "en": "Lobster Gauge"
+        }, 
+        "artefacts_group": [
+            {
+                "fr": "Service des p\u00eaches", 
+                "en": "Fisheries"
+            }
+        ], 
+        "dataset_name": "fisheries-service-des-peches.xml", 
+        "artefacts_composition_general": [
+            {
+                "fr": "m\u00e9tal", 
+                "en": "metal"
+            }
+        ], 
+        "art_location": "2475", 
+        "catalogue_number": "1995.0502", 
+        "assigned_date": "1995", 
+        "artefacts_composition_specific": [
+            {
+                "fr": "acier", 
+                "en": "steel"
+            }
+        ]
+    }, 
+    {
+        "discipline": {
+            "fr": "Artefact", 
+            "en": "Artifact"
+        }, 
+        "unique_identifier": "fc24bd0c", 
+        "artefacts_categorie": [
+            {
+                "fr": "Outils et \u00e9quipement", 
+                "en": "Tools & equipment"
+            }
+        ], 
+        "artefact_references": [
+            "1. ACQUISITION PROPOSAL PREPARED BY G.S. WILSON 1998-02-16, IN SUPP. INFO. FILE 980009."
+        ], 
+        "image": {
+            "image_link": "http://source.techno-science.ca/images/1998.0027.001.aa.cs.jpg", 
+            "image_thumbnail": "http://source.techno-science.ca/images/1998.0027.001.aa.cs.thumb.jpg"
+        }, 
+        "artefacts_sub_categorie": [
+            {
+                "fr": "R\u00e9colte", 
+                "en": "Harvesting"
+            }
+        ], 
+        "objname": {
+            "fr": "Matraque \u00e0 poisson", 
+            "en": "Halibut Bat"
+        }, 
+        "artefacts_group": [
+            {
+                "fr": "Service des p\u00eaches", 
+                "en": "Fisheries"
+            }
+        ], 
+        "dataset_name": "fisheries-service-des-peches.xml", 
+        "artefacts_composition_general": [
+            {
+                "fr": "bois", 
+                "en": "wood"
+            }
+        ], 
+        "art_location": "2380", 
+        "catalogue_number": "1998.0027", 
+        "assigned_date": "1998", 
+        "artefacts_composition_specific": []
+    }, 
+    {
+        "discipline": {
+            "fr": "Artefact", 
+            "en": "Artifact"
+        }, 
+        "unique_identifier": "ecea088f", 
+        "artefacts_categorie": [
+            {
+                "fr": "Outils et \u00e9quipement", 
+                "en": "Tools & equipment"
+            }, 
+            {
+                "fr": "Divers", 
+                "en": "Miscellaneous"
+            }
+        ], 
+        "artefact_references": [
+            "1. ACQUISITION PROPOSAL PREPARED BY G.S. WILSON 1998-02-18, IN SUPP. INFO. FILE 980009."
+        ], 
+        "image": {
+            "image_link": "http://source.techno-science.ca/images/1998.0019.001.aa.cs.jpg", 
+            "image_thumbnail": "http://source.techno-science.ca/images/1998.0019.001.aa.cs.thumb.jpg"
+        }, 
+        "artefacts_sub_categorie": [
+            {
+                "fr": "R\u00e9colte", 
+                "en": "Harvesting"
+            }
+        ], 
+        "objname": {
+            "fr": "Gant protecteur", 
+            "en": "Hand Protector"
+        }, 
+        "artefacts_group": [
+            {
+                "fr": "Service des p\u00eaches", 
+                "en": "Fisheries"
+            }, 
+            {
+                "fr": "Transports maritimes", 
+                "en": "Marine Transportation"
+            }
+        ], 
+        "dataset_name": "fisheries-service-des-peches.xml", 
+        "artefacts_composition_general": [
+            {
+                "fr": "r\u00e9sine", 
+                "en": "resin"
+            }, 
+            {
+                "fr": "fibre", 
+                "en": "fibre"
+            }
+        ], 
+        "art_location": "2475", 
+        "catalogue_number": "1998.0019", 
+        "assigned_date": "1998", 
+        "artefacts_composition_specific": [
+            {
+                "fr": "caoutchouc", 
+                "en": "rubber"
+            }, 
+            {
+                "fr": "laine", 
+                "en": "wool"
+            }
+        ]
+    }, 
+    {
+        "discipline": {
+            "fr": "Artefact", 
+            "en": "Artifact"
+        }, 
+        "unique_identifier": "a687e390", 
+        "artefacts_categorie": [
+            {
+                "fr": "Outils et \u00e9quipement", 
+                "en": "Tools & equipment"
+            }
+        ], 
+        "artefact_references": [
+            "1. ACQUISITION PROPOSAL PREPARED BY G.S. WILSON 1998-02-16, IN SUPP. INFO. FILE 980009."
+        ], 
+        "image": {
+            "image_link": "http://source.techno-science.ca/images/1998.0028.001.aa.cs.jpg", 
+            "image_thumbnail": "http://source.techno-science.ca/images/1998.0028.001.aa.cs.thumb.jpg"
+        }, 
+        "artefacts_sub_categorie": [
+            {
+                "fr": "R\u00e9colte", 
+                "en": "Harvesting"
+            }
+        ], 
+        "objname": {
+            "fr": "Palangre", 
+            "en": "Trawl Line"
+        }, 
+        "artefacts_group": [
+            {
+                "fr": "Service des p\u00eaches", 
+                "en": "Fisheries"
+            }
+        ], 
+        "dataset_name": "fisheries-service-des-peches.xml", 
+        "artefacts_composition_general": [
+            {
+                "fr": "fibre", 
+                "en": "fibre"
+            }
+        ], 
+        "art_location": "2380", 
+        "catalogue_number": "1998.0028", 
+        "assigned_date": "1998", 
+        "artefacts_composition_specific": []
+    }, 
+    {
+        "discipline": {
+            "fr": "Artefact", 
+            "en": "Artifact"
+        }, 
+        "unique_identifier": "8fe4cc5e", 
+        "artefacts_categorie": [
+            {
+                "fr": "Outils et \u00e9quipement", 
+                "en": "Tools & equipment"
+            }
+        ], 
+        "artefact_references": [
+            "1. ACQUISITION PROPOSAL PREPARED BY G.S. WILSON 1998-01-16, IN SUPP. INFO. FILE 980009."
+        ], 
+        "image": {
+            "image_link": "http://source.techno-science.ca/images/1998.0015.001.aa.cs.jpg", 
+            "image_thumbnail": "http://source.techno-science.ca/images/1998.0015.001.aa.cs.thumb.jpg"
+        }, 
+        "artefacts_sub_categorie": [
+            {
+                "fr": "R\u00e9colte", 
+                "en": "Harvesting"
+            }
+        ], 
+        "objname": {
+            "fr": "Gaffe \u00e0 poisson", 
+            "en": "Fish Gaff"
+        }, 
+        "artefacts_group": [
+            {
+                "fr": "Service des p\u00eaches", 
+                "en": "Fisheries"
+            }
+        ], 
+        "dataset_name": "fisheries-service-des-peches.xml", 
+        "artefacts_composition_general": [
+            {
+                "fr": "bois", 
+                "en": "wood"
+            }, 
+            {
+                "fr": "m\u00e9tal", 
+                "en": "metal"
+            }, 
+            {
+                "fr": "fibre", 
+                "en": "fibre"
+            }
+        ], 
+        "art_location": "2380", 
+        "catalogue_number": "1998.0015", 
+        "assigned_date": "1998", 
+        "artefacts_composition_specific": []
+    }, 
+    {
+        "discipline": {
+            "fr": "Artefact", 
+            "en": "Artifact"
+        }, 
+        "unique_identifier": "94ca665d", 
+        "artefacts_categorie": [
+            {
+                "fr": "Outils et \u00e9quipement", 
+                "en": "Tools & equipment"
+            }, 
+            {
+                "fr": "Divers", 
+                "en": "Miscellaneous"
+            }
+        ], 
+        "artefact_references": [
+            "1. SEE ACQUISITION PROPOSAL PREPARED BY G.S. WILSON 1998-02-16, IN SUPP. INFO. FILE 980009."
+        ], 
+        "image": {
+            "image_link": "http://source.techno-science.ca/images/1998.0021.001.aa.cs.jpg", 
+            "image_thumbnail": "http://source.techno-science.ca/images/1998.0021.001.aa.cs.thumb.jpg"
+        }, 
+        "artefacts_sub_categorie": [
+            {
+                "fr": "R\u00e9colte", 
+                "en": "Harvesting"
+            }
+        ], 
+        "objname": {
+            "fr": "Couteau", 
+            "en": "Knife"
+        }, 
+        "artefacts_group": [
+            {
+                "fr": "Service des p\u00eaches", 
+                "en": "Fisheries"
+            }, 
+            {
+                "fr": "Transports maritimes", 
+                "en": "Marine Transportation"
+            }
+        ], 
+        "dataset_name": "fisheries-service-des-peches.xml", 
+        "artefacts_composition_general": [
+            {
+                "fr": "m\u00e9tal", 
+                "en": "metal"
+            }, 
+            {
+                "fr": "bois", 
+                "en": "wood"
+            }
+        ], 
+        "art_location": "2475", 
+        "catalogue_number": "1998.0021", 
+        "assigned_date": "1998", 
+        "artefacts_composition_specific": []
+    }, 
+    {
+        "discipline": {
+            "fr": "Artefact", 
+            "en": "Artifact"
+        }, 
+        "unique_identifier": "8549f13e", 
+        "artefacts_categorie": [
+            {
+                "fr": "Outils et \u00e9quipement", 
+                "en": "Tools & equipment"
+            }
+        ], 
+        "artefact_references": [
+            "1. G.S. WILSON, CURATOR- MARINE TECHNOLOGY", 
+            "2. SEE ACQUISITON PROPOSAL PREPARED BY G.S. WILSON 1998-02-16, IN SUPP. INFO. FILE 980009."
+        ], 
+        "image": {
+            "image_link": "http://source.techno-science.ca/images/1998.0016.001.aa.cs.jpg", 
+            "image_thumbnail": "http://source.techno-science.ca/images/1998.0016.001.aa.cs.thumb.jpg"
+        }, 
+        "artefacts_sub_categorie": [
+            {
+                "fr": "R\u00e9colte", 
+                "en": "Harvesting"
+            }
+        ], 
+        "objname": {
+            "fr": "Palangre ligne dormante", 
+            "en": "Handline"
+        }, 
+        "artefacts_group": [
+            {
+                "fr": "Service des p\u00eaches", 
+                "en": "Fisheries"
+            }
+        ], 
+        "dataset_name": "fisheries-service-des-peches.xml", 
+        "artefacts_composition_general": [
+            {
+                "fr": "bois", 
+                "en": "wood"
+            }, 
+            {
+                "fr": "fibre", 
+                "en": "fibre"
+            }, 
+            {
+                "fr": "m\u00e9tal", 
+                "en": "metal"
+            }
+        ], 
+        "art_location": "2475", 
+        "catalogue_number": "1998.0016", 
+        "assigned_date": "1998", 
+        "artefacts_composition_specific": [
+            {
+                "fr": "plomb", 
+                "en": "lead"
+            }
+        ]
+    }, 
+    {
+        "discipline": {
+            "fr": "Artefact", 
+            "en": "Artifact"
+        }, 
+        "unique_identifier": "8944d698", 
+        "artefacts_categorie": [
+            {
+                "fr": "Outils et \u00e9quipement", 
+                "en": "Tools & equipment"
+            }
+        ], 
+        "artefact_references": [
+            "1. ACQUISITION PROPOSAL PREPARED BY G.S. WILSON 1998-02-16, IN SUPP. INFO. FILE 980009."
+        ], 
+        "image": {
+            "image_link": "http://source.techno-science.ca/images/1998.0024.001.aa.cs.jpg", 
+            "image_thumbnail": "http://source.techno-science.ca/images/1998.0024.001.aa.cs.thumb.jpg"
+        }, 
+        "artefacts_sub_categorie": [
+            {
+                "fr": "R\u00e9colte", 
+                "en": "Harvesting"
+            }
+        ], 
+        "objname": {
+            "fr": "Bac et filet de fond", 
+            "en": "Trawl Tub & net"
+        }, 
+        "artefacts_group": [
+            {
+                "fr": "Service des p\u00eaches", 
+                "en": "Fisheries"
+            }
+        ], 
+        "dataset_name": "fisheries-service-des-peches.xml", 
+        "artefacts_composition_general": [
+            {
+                "fr": "bois", 
+                "en": "wood"
+            }, 
+            {
+                "fr": "m\u00e9tal", 
+                "en": "metal"
+            }, 
+            {
+                "fr": "fibre", 
+                "en": "fibre"
+            }
+        ], 
+        "art_location": "2475", 
+        "catalogue_number": "1998.0024", 
+        "assigned_date": "1998", 
+        "artefacts_composition_specific": []
+    }, 
+    {
+        "discipline": {
+            "fr": "Artefact", 
+            "en": "Artifact"
+        }, 
+        "unique_identifier": "43a4ff95", 
+        "artefacts_categorie": [
+            {
+                "fr": "Outils et \u00e9quipement", 
+                "en": "Tools & equipment"
+            }
+        ], 
+        "artefact_references": [
+            "1. ACQUISITION PROPOSAL PREPARED BY G.S. WILSON 1998-02-16, IN SUPP. INFO. FILE 980009."
+        ], 
+        "image": {
+            "image_link": "http://source.techno-science.ca/images/1998.0025.001.aa.cs.jpg", 
+            "image_thumbnail": "http://source.techno-science.ca/images/1998.0025.001.aa.cs.thumb.jpg"
+        }, 
+        "artefacts_sub_categorie": [
+            {
+                "fr": "R\u00e9colte", 
+                "en": "Harvesting"
+            }
+        ], 
+        "objname": {
+            "fr": "Redresseur \u00e0 hame\u00e7on", 
+            "en": "Hook Straightener"
+        }, 
+        "artefacts_group": [
+            {
+                "fr": "Service des p\u00eaches", 
+                "en": "Fisheries"
+            }
+        ], 
+        "dataset_name": "fisheries-service-des-peches.xml", 
+        "artefacts_composition_general": [
+            {
+                "fr": "m\u00e9tal", 
+                "en": "metal"
+            }, 
+            {
+                "fr": "bois", 
+                "en": "wood"
+            }
+        ], 
+        "art_location": "2475", 
+        "catalogue_number": "1998.0025", 
+        "assigned_date": "1998", 
+        "artefacts_composition_specific": []
+    }, 
+    {
+        "discipline": {
+            "fr": "Artefact", 
+            "en": "Artifact"
+        }, 
+        "unique_identifier": "c5c2fcb0", 
+        "artefacts_categorie": [
+            {
+                "fr": "Outils et \u00e9quipement", 
+                "en": "Tools & equipment"
+            }
+        ], 
+        "artefact_references": [], 
+        "image": {
+            "image_link": "http://source.techno-science.ca/images/1972.1371.001.aa.cs.jpg", 
+            "image_thumbnail": "http://source.techno-science.ca/images/1972.1371.001.aa.cs.thumb.jpg"
+        }, 
+        "artefacts_sub_categorie": [
+            {
+                "fr": "R\u00e9colte", 
+                "en": "Harvesting"
+            }
+        ], 
+        "objname": {
+            "fr": "Section de  filet de p\u00eache", 
+            "en": "Net section"
+        }, 
+        "artefacts_group": [
+            {
+                "fr": "Service des p\u00eaches", 
+                "en": "Fisheries"
+            }
+        ], 
+        "dataset_name": "fisheries-service-des-peches.xml", 
+        "artefacts_composition_general": [
+            {
+                "fr": "synth\u00e9tique", 
+                "en": "synthetic"
+            }
+        ], 
+        "art_location": "2421", 
+        "catalogue_number": "1972.1371", 
+        "assigned_date": "1972", 
+        "artefacts_composition_specific": [
+            {
+                "fr": "polypropyl\u00e8ne - possible", 
+                "en": "polypropylene - possible"
+            }
+        ]
+    }, 
+    {
+        "discipline": {
+            "fr": "Artefact", 
+            "en": "Artifact"
+        }, 
+        "unique_identifier": "9887b372", 
+        "artefacts_categorie": [
+            {
+                "fr": "Divers", 
+                "en": "Miscellaneous"
+            }
+        ], 
+        "artefact_references": [
+            "Acquistion proposal Ref.#1"
+        ], 
+        "image": {
+            "image_link": "http://source.techno-science.ca/images/2010.0417.001.aa.cs.JPG", 
+            "image_thumbnail": "http://source.techno-science.ca/images/2010.0417.001.aa.cs.thumb.jpg"
+        }, 
+        "artefacts_sub_categorie": [], 
+        "objname": {
+            "fr": "M\u00e9daille", 
+            "en": "Medal"
+        }, 
+        "artefacts_group": [
+            {
+                "fr": "Service des p\u00eaches", 
+                "en": "Fisheries"
+            }
+        ], 
+        "dataset_name": "fisheries-service-des-peches.xml", 
+        "artefacts_composition_general": [
+            {
+                "fr": "m\u00e9tal", 
+                "en": "metal"
+            }, 
+            {
+                "fr": "fibre", 
+                "en": "fibre"
+            }
+        ], 
+        "art_location": "2475", 
+        "catalogue_number": "2010.0417", 
+        "assigned_date": "2010", 
+        "artefacts_composition_specific": []
+    }, 
+    {
+        "discipline": {
+            "fr": "Artefact", 
+            "en": "Artifact"
+        }, 
+        "unique_identifier": "d7555990", 
+        "artefacts_categorie": [
+            {
+                "fr": "Divers", 
+                "en": "Miscellaneous"
+            }
+        ], 
+        "artefact_references": [
+            "Acquistion proposal Ref.#1"
+        ], 
+        "image": {
+            "image_link": "http://source.techno-science.ca/images/2010.0417.002.aa.cs.JPG", 
+            "image_thumbnail": "http://source.techno-science.ca/images/2010.0417.002.aa.cs.thumb.jpg"
+        }, 
+        "artefacts_sub_categorie": [], 
+        "objname": {
+            "fr": "\u00c9tui \u00e0 m\u00e9dailles", 
+            "en": "Medal Case"
+        }, 
+        "artefacts_group": [
+            {
+                "fr": "Service des p\u00eaches", 
+                "en": "Fisheries"
+            }
+        ], 
+        "dataset_name": "fisheries-service-des-peches.xml", 
+        "artefacts_composition_general": [
+            {
+                "fr": "peau", 
+                "en": "skin"
+            }
+        ], 
+        "art_location": "2475", 
+        "catalogue_number": "2010.0417", 
+        "assigned_date": "2010", 
+        "artefacts_composition_specific": [
+            {
+                "fr": "cuir - possible", 
+                "en": "leather - possible"
+            }
+        ]
+    }, 
+    {
+        "discipline": {
+            "fr": "Artefact", 
+            "en": "Artifact"
+        }, 
+        "unique_identifier": "92574c82", 
+        "artefacts_categorie": [
+            {
+                "fr": "Divers", 
+                "en": "Miscellaneous"
+            }
+        ], 
+        "artefact_references": [
+            "Acquistion proposal Ref.#1"
+        ], 
+        "image": {
+            "image_link": "http://source.techno-science.ca/images/2010.0417.003.aa.cs.JPG", 
+            "image_thumbnail": "http://source.techno-science.ca/images/2010.0417.003.aa.cs.thumb.jpg"
+        }, 
+        "artefacts_sub_categorie": [], 
+        "objname": {
+            "fr": "Encart de bo\u00eete", 
+            "en": "Box Insert"
+        }, 
+        "artefacts_group": [
+            {
+                "fr": "Service des p\u00eaches", 
+                "en": "Fisheries"
+            }
+        ], 
+        "dataset_name": "fisheries-service-des-peches.xml", 
+        "artefacts_composition_general": [
+            {
+                "fr": "papier", 
+                "en": "paper"
+            }, 
+            {
+                "fr": "fibre", 
+                "en": "fibre"
+            }
+        ], 
+        "art_location": "2475", 
+        "catalogue_number": "2010.0417", 
+        "assigned_date": "2010", 
+        "artefacts_composition_specific": [
+            {
+                "fr": "carton", 
+                "en": "cardboard"
+            }, 
+            {
+                "fr": "velours - possible", 
+                "en": "velvet - possible"
+            }
+        ]
+    }, 
+    {
+        "discipline": {
+            "fr": "Artefact", 
+            "en": "Artifact"
+        }, 
+        "unique_identifier": "699ec599", 
+        "artefacts_categorie": [
+            {
+                "fr": "Outils et \u00e9quipement", 
+                "en": "Tools & equipment"
+            }
+        ], 
+        "artefact_references": [
+            "1. Curatorial worksheet prepared by S.J. Beauvais, in Supp. Info. file 1966.0984", 
+            "2. Correspondence: A. Duthrie, Canada. Fisheries & Oceans and G.S. Wilson , CSTM May 10, 2000- in Supp. Info. file 1966.0984", 
+            "3. \"Report on Gear Technology in Eastern Canada\" [1977] http://www.ncr.dfo.ca/frcc/gear/gear97.htm.- see 26 pp. hardcopy in Supp. Info. file 1966.0984", 
+            "4. \"About us: Gourock\" http://gourock.com/about.html [2006.06.15]- see 1 p. hardcopy in Supp. Info. file 1966.0984", 
+            "5. \"Records of Gourock-Bridport Ltd., rope makers and textile manufacturers, Montreal, Canada\" http://www.archives.gla.ac.uk/collects/catalog/ugd/001-050/ugd042-6-4.html [2006.06.15]- see 4 pp. hardcopy in Supp. Info. file 1966.0984", 
+            "6. \"Swan Net-Gundry Ltd.\" http://www.swannetgundry.com/home.htm [2006.06.15]- 1 p. hardcopy in Supp. Info. file 1966.0984", 
+            "7. Carey, C. \"The many nets of Hampidjan\"  Seafood New Zealand .Oct. 2004  pp. 19-25. See hardcopy in Supp. Info. file 1966.0984", 
+            "8. \"Belly Lines\" Chapter 2 of 'Introd"
+        ], 
+        "image": {
+            "image_link": "http://source.techno-science.ca/images/1966.0984.001.aa.cs.jpg", 
+            "image_thumbnail": "http://source.techno-science.ca/images/1966.0984.001.aa.cs.thumb.jpg"
+        }, 
+        "artefacts_sub_categorie": [
+            {
+                "fr": "R\u00e9colte", 
+                "en": "Harvesting"
+            }
+        ], 
+        "objname": {
+            "fr": "Filet", 
+            "en": "Net"
+        }, 
+        "artefacts_group": [
+            {
+                "fr": "Service des p\u00eaches", 
+                "en": "Fisheries"
+            }
+        ], 
+        "dataset_name": "fisheries-service-des-peches.xml", 
+        "artefacts_composition_general": [
+            {
+                "fr": "synth\u00e9tique", 
+                "en": "synthetic"
+            }, 
+            {
+                "fr": "m\u00e9tal", 
+                "en": "metal"
+            }, 
+            {
+                "fr": "fibre", 
+                "en": "fibre"
+            }, 
+            {
+                "fr": "m\u00e9tal", 
+                "en": "metal"
+            }
+        ], 
+        "art_location": "2421", 
+        "catalogue_number": "1966.0984", 
+        "assigned_date": "1966", 
+        "artefacts_composition_specific": [
+            {
+                "fr": "polypropyl\u00e8ne - possible", 
+                "en": "polypropylene - possible"
+            }, 
+            {
+                "fr": "aluminium", 
+                "en": "aluminum"
+            }, 
+            {
+                "fr": "chanvre - possible", 
+                "en": "hemp - possible"
+            }, 
+            {
+                "fr": "acier", 
+                "en": "steel"
+            }
+        ]
+    }, 
+    {
+        "discipline": {
+            "fr": "Artefact", 
+            "en": "Artifact"
+        }, 
+        "unique_identifier": "4b58e326", 
+        "artefacts_categorie": [
+            {
+                "fr": "Outils et \u00e9quipement", 
+                "en": "Tools & equipment"
+            }, 
+            {
+                "fr": "Outillage personnel", 
+                "en": "Personal gear"
+            }
+        ], 
+        "artefact_references": [], 
+        "image": {
+            "image_link": "http://source.techno-science.ca/images/1992.1184.001.aa.cs.jpg", 
+            "image_thumbnail": "http://source.techno-science.ca/images/1992.1184.001.aa.cs.thumb.jpg"
+        }, 
+        "artefacts_sub_categorie": [
+            {
+                "fr": "R\u00e9colte", 
+                "en": "Harvesting"
+            }
+        ], 
+        "objname": {
+            "fr": "Croc", 
+            "en": "Fish Hook"
+        }, 
+        "artefacts_group": [
+            {
+                "fr": "Service des p\u00eaches", 
+                "en": "Fisheries"
+            }, 
+            {
+                "fr": "Aviation", 
+                "en": "Aviation"
+            }
+        ], 
+        "dataset_name": "fisheries-service-des-peches.xml", 
+        "artefacts_composition_general": [
+            {
+                "fr": "m\u00e9tal", 
+                "en": "metal"
+            }, 
+            {
+                "fr": "m\u00e9tal", 
+                "en": "metal"
+            }
+        ], 
+        "art_location": "AV 194", 
+        "catalogue_number": "1992.1184", 
+        "assigned_date": "1992", 
+        "artefacts_composition_specific": [
+            {
+                "fr": "fer blanc", 
+                "en": "tin"
+            }, 
+            {
+                "fr": "acier", 
+                "en": "steel"
+            }
+        ]
+    }
+]
