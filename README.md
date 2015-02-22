@@ -3,6 +3,9 @@
 ####Notes
 please refers **[previously to my helper code](https://github.com/guinslym/cstmc_helper_to_parse_the_dataset)** that helped me parse the datasets
 
+###Code
+**My code is Messy :)** but if it woks for 15 minutes, that's probably what I needed.
+
 #Usage
 	Mongodb (and Mongolabs add:on on heroku)
 	rails 4.x
