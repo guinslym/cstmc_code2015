@@ -253,3 +253,9 @@ fr:
       last: "Dernier"
   hello_world: Bonjour world!
   hello_flash: Bonjour flash!
+  cstm_abbr: "S.M.S.T.C."
+  cstm_tooltip: "Société des Musées de Sciences et Technologies du Canada"
+  index_title: "Archives Phototographiques"  
+  index_odi: "Données Ouvertes Canada"
+  index_placeholder: "Rechercher un artéfact (ex: imprimerie, harpon, machine ..)"
+  index_submit: "Rechercher les images"
