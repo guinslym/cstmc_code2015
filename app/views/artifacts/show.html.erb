@@ -61,18 +61,15 @@ end
  %>
 
 
-
+<% locale_en = (I18n.locale).to_s.eql?("en") %>
 <div class="container">
-<!--
-<h1><%#=t :hello_world %></h1>
--->
 
 <% locale_en = (I18n.locale).eql?("en") %>
 <div class="col-lg-10 col-lg-offset-1">
                 <div class="benefit">
                 <span data-animation="bounceIn" class="benefit-icon fa fa-search-plus bounceIn animated done-animation"></span>
                 <img id="zoom" src="<%= @artifact.image_original %>" data-zoom-image="<%= @artifact.image_original %>"  class="thumbnail" alt="<%= @artifact.objname_en %>"/>  
-                <% if locale_en %>               
+                <% if (I18n.locale).to_s.eql?("en") %>               
                 <h4 class="benefit-title"><%=  @artifact.objname_en %></h4>
                 <h1 class="post-title text-center"><%=  @artifact.objname_en %></h1>
                 <% else %>
@@ -99,7 +96,7 @@ end
       <tr>
         <td><%= I18n.t '.shw_art_name' %></td>
         <td>
-        <% if locale_en %>
+        <% if (I18n.locale).to_s.eql?("en") %>
           <%= @artifact.objname_en %>
         <% else %>
           <%= @artifact.objname_fr %>
@@ -202,9 +199,127 @@ section#footer{
   margin-top:100px;
 }
 </style>
-<section id="footer">
-  <h2>Hello World</h2>
-</section>
+
+<style type="text/css">
+  
+.footer {
+    background: none repeat scroll 0 0 #253340;
+    color: #fff;
+    font-size: 14px;
+    padding-top: 40px;
+    position: relative;
+    z-index: 20;
+}
+.footer {
+    color: #fff;
+    font-size: 14px;
+}
+.footer-col {
+    margin-bottom: 30px;
+}
+.footer .footer-col .title {
+    color: #fff;
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 20px;
+    margin-top: 0;
+    opacity: 0.9;
+}
+footer ul, footer ol {
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+.footer .footer-col.links li {
+    margin-bottom: 10px;
+}
+.list-unstyled {
+    list-style: outside none none;
+}
+.list-inline {
+    list-style: outside none none;
+    margin-left: -5px;
+    padding-left: 0;
+}
+.footer .footer-col a {
+    color: #6d8dab;
+}
+.footer .footer-col.links .fa {
+    margin-right: 5px;
+}
+.footer .footer-col.connect .social {
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+.footer .footer-col a {
+    color: #6d8dab;
+}
+.footer .footer-col.connect .social li a .fa {
+    color: #b3b3b3;
+    font-size: 22px;
+}
+.footer .footer-col p {
+    color: #fff;
+}
+.footer p {
+    opacity: 0.5;
+}
+.footer .footer-col.connect .btn-cta-primary {
+    background: none repeat scroll 0 0 #5d80a1;
+    border-color: #5d80a1;
+}
+.footer .btn-cta, .footer a.btn-cta {
+    padding: 9px 10px;
+}
+.footer .has-divider {
+    border-top: 1px solid #2b3b4a;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+  .cta-mail {
+    background-color: #44A6A6;//#b84d45;
+    background-image: url("http://startbootstrap.com/assets/img/bg.png");
+    color: #fff;
+    margin-top: 50px;
+    padding: 50px 0;
+    min-height: 200px;
+}
+.cta-mail .input-group {
+    margin: 30px auto 0;
+    max-width: 500px;
+}
+.fa-twitter{
+  font-size: 2em;
+  display:block;
+  margin-bottom: 20px;
+  padding-top: 10px;
+}
+</style>
+
+  <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="col">
+                     </div>
+                </div>
+            </div>
+            
+            <hr>
+            
+            <div class="row">
+                <div class="col-lg-9 copyright" style="color: white;">
+                    <%= Time.now.year %> Open Data Day. <a href="https://twitter.com/search?q=%23code2015&src=typd&lang=en" target="_blank" style="text-decoration:none; color:white">#Code2015 &nbsp;<i class="fa fa-twitter"></i></a>
+                </div>
+                <div class="col-lg-3">
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
 <script type="text/javascript">
 
 
