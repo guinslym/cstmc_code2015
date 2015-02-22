@@ -16,7 +16,7 @@ The website are hosted on Heroku. [https://cstmc2015.herokuapp.com/](https://cst
 	bundle install
 	rake db:create
 	rake db:migrate
-	rake db:seed #this might take a while...really!!!!
+	rake db:seed #this might take a while...trust me!!!
 	guard
 
 ##todo
@@ -30,5 +30,7 @@ Credits/or helpers that I use to help me build the app:--
 
 [Bootstrap](http://www.bootstrapcdn.com/) for templating--
 
-[Codyhouse](http://codyhouse.co/) for the [filter template](http://codyhouse.co/gem/content-filter/)
+[Codyhouse](http://codyhouse.co/) for the [filter template](http://codyhouse.co/gem/content-filter/) --
+
+[Loading Icon from SmallEnvelop](http://smallenvelop.com/display-loading-icon-page-loads-completely/)
 	
