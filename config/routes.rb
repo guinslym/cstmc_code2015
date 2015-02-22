@@ -1,15 +1,15 @@
 Rails.application.routes.draw do
 
-  resources :artifacts
-
-  resources "artefacts", only: [:index, :show] do
-    collection { post :search, to: 'artefacts#search' }
+  #resources :artifacts
+  
+  resources "artifacts", only: [:index, :show] do
+    collection { post :search, to: 'artifacts#search' }
   end
   #http://localhost:3000/artifacts?utf8=%E2%9C%93&&locale=en&q%5Bobjname_en_cont%5D=fire
-  get 'artefacts/index'
+  get 'artifacts/index'
   get 'welcome/advanced_search'
 
-  get 'artefacts/show'
+  get 'artifacts/show'
 
   get 'welcome/index'
   get 'welcome/recherche'
