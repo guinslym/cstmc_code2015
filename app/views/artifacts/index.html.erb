@@ -15,7 +15,7 @@
 <% 
 #application helper
 @composition = []
-locale_en = (I18n.locale).eql?("en")
+locale_en = (I18n.locale).to_s.eql?("en")
 if !@artifacts.nil? 
 @artifacts.each do |artefact| 
     if locale_en
@@ -52,6 +52,9 @@ def find_materiaux(materiaux_value)
 end
 
   %>
+
+
+
 
 <%
 group =[]
@@ -90,17 +93,22 @@ end
             compte = compte + 1
             %>
 
-            <% if (I18n.locale).to_s.eql?("en") %>
+    <% if locale_en %>
             <li class="mix <%= find_group(artefact.artifact_group_en) %>  <%= obj = find_materiaux(artefact.artifact_composition_general_en) %>">
-
-            <% else %>
-            <li class="mix <%= find_group(artefact.artifact_group_fr) %>  <%= obj = find_materiaux(artefact.artifact_composition_general_fr) %>">
-
-            <% end %>
 
             <%= link_to (image_tag "#{artefact.image_original}", :tag =>"Image ", :class => "emr example#{compte}"), artefact %>
             <div class="show-title" style="background-color:white; padding:5px; margin: auto 0;">
               <h5><%= artefact.objname_en %></h5>
+
+      <% else %>
+            <li class="mix <%= find_group(artefact.artifact_group_fr) %>  <%= obj = find_materiaux(artefact.artifact_composition_general_fr) %>">
+
+
+            <%= link_to (image_tag "#{artefact.image_original}", :tag =>"Image ", :class => "emr example#{compte}"), artefact %>
+            <div class="show-title" style="background-color:white; padding:5px; margin: auto 0;">
+              <h5><%= artefact.objname_fr %></h5>
+     <% end %>
+
             </div>
             </li>
             <% end %>

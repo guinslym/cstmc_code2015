@@ -8,4 +8,6 @@ module ApplicationHelper
 			link_to "En", url_for(:locale => 'en'), :class => "btn btn-info", :target=>"_blank"
 		end
 	end 
+
+
 end

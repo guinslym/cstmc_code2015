@@ -1,7 +1,11 @@
 Rails.application.routes.draw do
 
   #resources :artifacts
-  
+  scope "(:locale)" do
+ resources "artifacts", only: [:index, :show] do
+    collection { post :search, to: 'artifacts#search' }
+  end
+end
   resources "artifacts", only: [:index, :show] do
     collection { post :search, to: 'artifacts#search' }
   end
