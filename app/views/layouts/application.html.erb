@@ -45,7 +45,7 @@ height: 150px;
 <body>
   <header class="cd-header">
     <h1>
-      <%= link_to "#{I18n.t '.r_home'}", root_path, :class=>"home", :style =>"color:white" %>
+      <%= link_to "#{I18n.t '.r_home'}", root_path,  :class=>"home", :style =>"color:white" %>
     </h1>
   </header>
 
@@ -86,9 +86,8 @@ height: 150px;
 
 
   <script type="text/javascript">
-
-  </script>
-  <script type="text/javascript">
+  //credits http://codyhouse.co/gem/content-filter/
+  //@guerriero_se thanks buddy!
 jQuery(document).ready(function($){
   //open/close lateral filter
   $('.cd-filter-trigger').on('click', function(){
@@ -116,6 +115,7 @@ jQuery(document).ready(function($){
       
     //check if user has clicked the placeholder item
     if( $(event.target).is(filter_tab_placeholder) ) {
+      alert('hello')
       (filter_tab_placeholder_default_value == filter_tab_placeholder.text()) ? filter_tab_placeholder.text(filter_tab_placeholder_text) : filter_tab_placeholder.text(filter_tab_placeholder_default_value) ;
       $('.cd-tab-filter').toggleClass('is-open');
 
@@ -123,6 +123,7 @@ jQuery(document).ready(function($){
     } else if( filter_tab_placeholder.data('type') == selected_filter ) {
       filter_tab_placeholder.text($(event.target).text());
       $('.cd-tab-filter').removeClass('is-open'); 
+
 
     } else {
       //close the dropdown and change placeholder text/data-type value
