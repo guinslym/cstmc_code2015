@@ -14,11 +14,13 @@ please refers **[previously to my helper code](https://github.com/guinslym/cstmc
 	bundle install
 	rake db:create
 	rake db:migrate
-	rake db:seed
+	rake db:seed #this might take a while...really!!!!
 	guard
 
 ##todo
-	Javascript; filtering the content.
+Javascript; filtering the content.
+
+licence MIT or 
 
 Credits/or helpers that I use to help me build the app:--
 
