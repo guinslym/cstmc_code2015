@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   resources "artefacts", only: [:index, :show] do
     collection { post :search, to: 'artefacts#search' }
   end
+  #http://localhost:3000/artifacts?utf8=%E2%9C%93&&locale=en&q%5Bobjname_en_cont%5D=fire
   get 'artefacts/index'
   get 'welcome/advanced_search'
 

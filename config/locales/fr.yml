@@ -256,6 +256,35 @@ fr:
   cstm_abbr: "S.M.S.T.C."
   cstm_tooltip: "Société des Musées de Sciences et Technologies du Canada"
   index_title: "Archives Phototographiques"  
-  index_odi: "Données Ouvertes Canada"
+  index_odi: "Données Ouvertes :: Canada"
   index_placeholder: "Rechercher un artéfact (ex: imprimerie, harpon, machine ..)"
-  index_submit: "Rechercher les images"
+  index_submit: "Rechercher"
+  r_home: Accueil 
+  r_facets: FACETTES 
+  r_advseach: "Recherche Avancée"
+  r_close: Fermer 
+  r_group: "Classification par Groupe" 
+  r_s_composition: "Classification par Matériaux"
+  r_composition: "Matériaux"
+  r_try: "Tapez"
+  adv_back: Retour 
+  adv_tips: "Remplissez au moins un champ."
+  shw_opd: "Données Ouvertes"
+  shw_data_name: "Jeux de données"
+  shw_art_name: "Nom de l'artefact"
+  shw_art: Artefact
+  shw_date: "Date"
+  shw_img_link: "Lien Hypertexte de l'image"
+  shw_img_thumb: "Miniature/Vignette"
+  shw_location: "Côte d'emplacement"
+  shw_art_group: "Groupe"
+  shw_art_category: "Catégorie"
+  shw_art_compo: "Matériaux"
+  shw_license: "License de données ouvertes"
+  shw_download: "Téléchargez l'image"
+  shw_zoom: "Plus la dimension de l'image ci-haut est plus grande que la dimension du cadre, plus le zoom sera élevé. Si la dimension de l'image est proche de la dimension du cadre, le zoom sera nul. "
+  shw_back_result: "Retour aux résultats"
+  shw_gov_license: "  Licence du gouvernement ouvert du gouvernement du Canada"
+  shw_license_contains: "Cette licence vous permet de copier, de modifier, de publier, de traduire, d’adapter, de distribuer ou d’utiliser autrement l'Information, quel que soit le support, mode ou format employé, à toutes fins légitimes, à condition de reconnaître la source de l'Information et, lorsque cela est possible, de fournir un lien vers cette licence."
+  shw_catalogue_number: 'No. de catalogue'
+  shw_catalogue_number_meaning: "Numéro de catalogue unique attribué à chaque artéfact. "

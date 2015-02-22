@@ -83,7 +83,7 @@ end
 
   <tbody>
       <tr>
-        <td>Dataset name</td>
+        <td><%= I18n.t '.shw_data_name' %></td>
         <td>
         <% link = @artifact.art_dataset_name.split("-")[0] 
            link = 'http://donnees.techno-science.ca/en/dataset?q=' + link +'&sort=score+desc%2C+metadata_modified+desc'
@@ -94,70 +94,65 @@ end
         </td>
       </tr>
       <tr>
-        <td>Artifact name</td>
+        <td><%= I18n.t '.shw_art_name' %></td>
         <td><%= @artifact.objname_en %></td>
       </tr>
       <tr>
-        <td>Artifact <abbr title="A Catalogue number is assigned to each artifact." class="initialism" style="color:green">UID</abbr></td>
+        <td><abbr title="<%= I18n.t '.shw_catalogue_number_meaning' %> " class="initialism" style="color:green"> <%= I18n.t '.shw_catalogue_number' %> </abbr></td>
         <td><%= @artifact.catalogue_number %></td>
       </tr>
       <tr>
-        <td>Assessement date</td>
+        <td><%= I18n.t '.shw_date' %></td>
         <td><%= @artifact.artifact_date %></td>
       </tr>
       <tr>
-        <td>Image Link</td>
+        <td><%= I18n.t '.shw_img_link' %></td>
         <td><%= @artifact.image_original %></td>
       </tr>
       <tr>
-        <td>Thumbnail Link</td>
+        <td><%= I18n.t '.shw_img_thumb' %></td>
         <td><%= @artifact.image_thumbnail  %></td>
       </tr>
       <tr>
       <tr>
-        <td>Location</td>
+        <td><%= I18n.t '.shw_location' %></td>
         <td><%= @artifact.art_location  %></td>
       </tr>
       <tr>
-        <td>Artifact Group</td>
+        <td><%= I18n.t '.shw_art_group' %></td>
         <td><% (eval(@artifact.artifact_group_en)).each do |mat| %>
             <span class="label label-primary"><%= mat.capitalize %></span>
         <%end%></td>
       </tr>
       <tr>
-        <td>Artifact Category</td>
+        <td><%= I18n.t '.shw_art_category' %></td>
         <td><% (eval(@artifact.artifact_category_en)).each do |mat| %>
             <span class="label label-primary"><%= mat.capitalize %></span>
         <%end%></td>
       </tr>
       <tr>
-        <td>Artifact Compositions</td>
+        <td><%= I18n.t '.shw_art_compo' %></td>
         <td><% (eval(@artifact.artifact_composition_general_en)).each do |mat| %>
             <span class="label label-primary"><%= mat.capitalize %></span>
         <%end%>
         </td>
       </tr>
       <tr>
-        <td>Open Data License</td>
-        <td><a href="http://open.canada.ca/en/open-government-licence-canada">Contains information licensed under the Open Government Licence – Canada.</a><br/>
-                     <span>This licence allows you to copy, modify, publish, translate, adapt, distribute, or otherwise use the information in any medium, mode, or format for any lawful purpose, so long as you acknowledge the source of the information, and provide a link to the <a href="http://open.canada.ca/en/open-government-licence-canada">licence</a> where possible.</td>
+        <td><%= I18n.t '.shw_license' %></td>
+        <td><a href="http://open.canada.ca/en/open-government-licence-canada"><%= I18n.t '.shw_gov_license' %></a><br/>
+                     <span><%= I18n.t '.shw_license_contains' %> <a href="http://open.canada.ca/en/open-government-licence-canada"> Licence</a> </td>
       </tr>
   </tbody>
 </table>
               </div>
 
-<script type="text/javascript">
-             var info = <%#= eval(@artifact.exif).to_json %>
-             console.log(info)
-  
-</script>
 
 <div class="text-left" >
 <%= link_to '<i class="fa fa-file-image-o"></i> &nbsp;Download image'.html_safe, {:controller => "welcome", :action => "download_jpeg", :id => @artifact.id}, :class => "btn btn-primary btn-sm donwnload_image", data: {disable_with: "<i class='fa fa-spinner fa-spin fa-2x'> </i> Downloading..."}, :style => "margin-bottom:30px;" %>
 </div>
 <div class="alert alert-info alert-dismissible" role="alert">
   <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-  <strong>Zoom:</strong> If the image above have approximately the same size than the original than the zoom level will be null. Otherwise if the original image size are bigger than the image that you see above than, the greater the zoom level effect will be. <br/>
+  <strong>Zoom:</strong> <%= I18n.t '.shw_zoom' %> <br/>
 </div>
 
 
@@ -183,8 +178,8 @@ end
 
 <div class="container text-center" >
 <div class="row" style="margin-bottom:50px;">
-  
-<%= link_to 'Back to the results', 'javascript:history.go(-1);', :class => "btn btn-warning" %>
+
+<%= link_to "#{I18n.t '.shw_back_result'}", 'javascript:history.go(-1);', :class => "btn btn-warning" %>
 </div>
   
 </div>

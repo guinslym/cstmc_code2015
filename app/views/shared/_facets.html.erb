@@ -2,39 +2,13 @@
       <form>
 
 
-        <div class="cd-filter-block">
-          <h4>By Colors</h4>
-
-          <ul class="cd-filter-content cd-filters list">
-            <li>
-              <input class="filter" data-filter="" type="radio" name="radioButton" id="radio1" checked>
-              <label class="radio-label" for="radio1">All</label>
-            </li>
-            <li>
-              <input class="filter" data-filter=".bw" type="radio" name="radioButton" id="radio2">
-                <label class="radio-label" for="radio2">Black and white</label>
-            </li>
-            <li>
-              <input class="filter" data-filter=".bgs" type="radio" name="radioButton" id="radio3">
-                <label class="radio-label" for="radio3">Grayscale</label>
-            </li>
-             <li>
-              <input class="filter" data-filter=".cl" type="radio" name="radioButton" id="radio4">
-                <label class="radio-label" for="radio4">Color</label>
-            </li>
-
-          </ul> <!-- cd-filter-content -->
-        </div> <!-- cd-filter-block -->
-
-
-
 <% group =  @group_artifact 
 
 
 %>
 
         <div class="cd-filter-block">
-          <h4>Artifact Group</h4>
+          <h4><%= I18n.t '.r_group' %></h4>
 
           <ul class="cd-filter-content cd-filters list">
           <% group.each do |artifact_group_en| %>
@@ -50,16 +24,16 @@
 
 
         <div class="cd-filter-block">
-          <h4>Search:Composition</h4>
+          <h4><%= I18n.t '.r_s_composition' %></h4>
           
           <div class="cd-filter-content">
-            <input type="search" placeholder="Try <%= @composition.first %>...">
+            <input type="search" placeholder="<%= I18n.t '.r_try' %> <%= @composition.first %>...">
           </div> 
         </div> 
 
 
         <div class="cd-filter-block">
-          <h4>Composition</h4>
+          <h4><%= I18n.t '.r_composition' %></h4>
 
           <ul class="cd-filter-content cd-filters list">
 
@@ -121,7 +95,7 @@
 
       </form>
 
-      <a href="#0" class="cd-close">Close</a>
+      <a href="#0" class="cd-close"><%= I18n.t '.r_close' %></a>
     </div> <!-- cd-filter -->
 
-    <a href="#0" class="cd-filter-trigger">Facets</a>
+    <a href="#0" class="cd-filter-trigger"><%= I18n.t '.r_facets' %> </a>

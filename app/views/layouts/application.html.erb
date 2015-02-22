@@ -44,7 +44,7 @@ height: 150px;
 </head>
 <body>
   <header class="cd-header">
-    <h1><a href="/welcome/index" class="home" style="color:white">Home</a></h1>
+    <h1><a href="/welcome/index" class="home" style="color:white"><%= I18n.t '.r_home' %></a></h1>
   </header>
 
 
@@ -64,9 +64,9 @@ height: 150px;
           -->
           <li class="filter">
           <% if current_page?(:controller => 'welcome', :action => 'advanced_search') %>
-            <%= link_to 'Back', 'javascript:history.go(-1);' %>
+            <%= link_to "#{I18n.t '.adv_back'}", 'javascript:history.go(-1);' %>
           <% else %>
-            <%= link_to 'Advanced Search', welcome_advanced_search_url %>
+            <%= link_to "#{I18n.t '.r_advseach'}", welcome_advanced_search_url %>
           <% end %>
           </li>
         </ul> <!-- cd-filters -->

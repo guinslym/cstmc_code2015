@@ -1,4 +1,4 @@
-<h4>Advanced Search</h4>
+<h4><%= I18n.t '.r_advseach' %></h4>
 <%= search_form_for @search do |f| %>
   <%= f.condition_fields do |c| %>
     <div class="large-4 small-4 columns">
@@ -21,6 +21,6 @@
     <%= s.sort_select Hash.new, class: "large-5 small-4 columns mrs radius" %>
   <% end %>
   </div>
-  <%= f.submit "Search", class: "radius button" %>
+  <%= f.submit "#{I18n.t '.index_submit'}", class: "radius button" %>
 <% end %>
 </div>

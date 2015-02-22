@@ -210,3 +210,32 @@ en:
   index_odi: Open Data Initiative
   index_placeholder: Search Artifacts images (i.e. fire, pencil, pen ..)
   index_submit: Search Images
+  r_home: Home 
+  r_facets: FACETS 
+  r_advseach: Advanced Search
+  r_close: Close 
+  r_group: Artifact Group 
+  r_s_composition: Search Composition
+  r_composition: Composition
+  r_try: Try
+  adv_back: Back 
+  adv_tips: Fill at least one field.
+  shw_opd: Open Data
+  shw_data_name: Dataset name
+  shw_art_name: Artifact name
+  shw_art: Artifact
+  shw_date: Assessement date
+  shw_img_link: Image Link
+  shw_img_thumb: Thumbnail Link
+  shw_location: Location
+  shw_art_group: Artifact Group
+  shw_art_category: Artifact Category
+  shw_art_compo: Artifact Compositions
+  shw_license: Open Data License
+  shw_download: Download image
+  shw_zoom: "If the image above have approximately the same size than the original than the zoom level will be null. Otherwise if the original image size are bigger than the image that you see above than, the greater the zoom level effect will be. "
+  shw_back_result: Back to the results
+  shw_gov_license: Contains information licensed under the Open Government Licence – Canada.
+  shw_license_contains: This licence allows you to copy, modify, publish, translate, adapt, distribute, or otherwise use the information in any medium, mode, or format for any lawful purpose, so long as you acknowledge the source of the information, and provide a link to the license where possible.
+  shw_catalogue_number: Catalogue Number
+  shw_catalogue_number_meaning: A unique Catalogue No. is assigned to each artifact.

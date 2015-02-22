@@ -48,9 +48,9 @@ div.body{
 }
 </style>
 <div class="remodal animated fadeInUp" data-remodal-id="show" >
-    <h1>Advanced Search</h1>
+    <h1><%= I18n.t '.r_advseach' %></h1>
     <p>
-        Fill at least one field.
+        <%= I18n.t '.adv_tips' %>
     </p>
     
     <div class="essaie">
@@ -85,7 +85,7 @@ div.body{
     <td>
       <div class="field">
   
-      <%= f.submit 'Submit', :class => 'remodal-confirm' %>
+      <%= f.submit "#{I18n.t '.index_submit'}", :class => 'remodal-confirm' %>
 </div>
     </td>
   </tr>
