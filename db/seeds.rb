@@ -13,6 +13,8 @@ Artifact.delete_all
 
 if Rails.env.production?  
 
+  puts "seeding on heroku"
+
   def on_heroku_upload_this_file_to_the_db
     file = File.read("artefact_for_heroku_db.json")
     data_hash = JSON.parse(file)
@@ -48,7 +50,7 @@ if Rails.env.production?
 
 else#if Rails.env.production?  
 
-
+  puts "seeding on Dev and Test db"
   puts "creating Artifact"
 
 
