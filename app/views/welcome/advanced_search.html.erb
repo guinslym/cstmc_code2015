@@ -56,40 +56,85 @@ div.body{
     <div class="essaie">
       
       <%= search_form_for @search do |f| %>
-<table>
-  <tr>
-    <td class="first">
-  <%= f.label :artifact_category_en_cont, "Artefact Category" %>
-    </td>
-    <td>
-  <%= f.search_field :artifact_category_en_cont %>
-    </td>
-  </tr>
-  <tr>
-    <td>
-  <%= f.label :artifact_group_en_cont, "Artefact Group" %>
-    </td>
-    <td>
-  <%= f.search_field :artifact_group_en_cont %>
-    </td>
-  </tr>
-  <tr>
-    <td>
-  <%= f.label :artifact_composition_general_en_cont, "Composition" %>
-    </td>
-    <td>
-  <%= f.search_field :artifact_composition_general_en_cont %>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <div class="field">
-  
-      <%= f.submit "#{I18n.t '.index_submit'}", :class => 'remodal-confirm' %>
-</div>
-    </td>
-  </tr>
-</table>
+
+<% if (I18n.locale).to_s.eql?("en") %>
+  <table>
+    <tr>
+      <td class="first">
+    <%= f.label :artifact_category_en_cont, "Artefact Category" %>
+      </td>
+      <td>
+    <%= f.search_field :artifact_category_en_cont %>
+      </td>
+    </tr>
+    <tr>
+      <td>
+    <%= f.label :artifact_group_en_cont, "Artefact Group" %>
+      </td>
+      <td>
+    <%= f.search_field :artifact_group_en_cont %>
+      </td>
+    </tr>
+    <tr>
+      <td>
+    <%= f.label :artifact_composition_general_en_cont, "Composition" %>
+      </td>
+      <td>
+    <%= f.search_field :artifact_composition_general_en_cont %>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div class="field">
+    
+        <%= f.submit "#{I18n.t '.index_submit'}", :class => 'remodal-confirm' %>
+  </div>
+      </td>
+    </tr>
+  </table>
+
+<% else %><!-- else locale -->
+
+  <table>
+    <tr>
+      <td class="first">
+    <%= f.label :artifact_category_fr_cont, "#{I18n.t '.shw_art_category'}" %>
+      </td>
+      <td>
+    <%= f.search_field :artifact_category_fr_cont %>
+      </td>
+    </tr>
+    <tr>
+      <td>
+    <%= f.label :artifact_group_fr_cont, "#{I18n.t '.shw_art_group'}" %>
+      </td>
+      <td>
+    <%= f.search_field :artifact_group_fr_cont %>
+      </td>
+    </tr>
+    <tr>
+      <td>
+    <%= f.label :artifact_composition_general_fr_cont, "#{I18n.t '.shw_art_compo'}" %>
+      </td>
+      <td>
+    <%= f.search_field :artifact_composition_general_fr_cont %>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div class="field">
+    
+        <%= f.submit "#{I18n.t '.index_submit'}", :class => 'remodal-confirm' %>
+  </div>
+      </td>
+    </tr>
+  </table>
+
+
+<!-- end locale -->
+<% end %>
+
+<!-- end form -->
 <% end %>
   
 

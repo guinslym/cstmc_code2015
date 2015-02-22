@@ -36,8 +36,13 @@ $(function () {
 <div class="col-lg-10 col-lg-offset-1 text-center" style="margin-top:30px;" id="main-page">
     
 <%= search_form_for @search, :method => "get", id: "search-form", :html => {:class=>"form-group main-form"} do |f| %>
-  <%#= text_field_tag :search, params[:search], placeholder: "Search Artefacts images", :class => "form-group main-form", :style => "height:40px;width:60%" %>
+
+<% if (I18n.locale).to_s.eql?("en") %>
   <%= f.search_field :objname_en_cont, :required => true, placeholder: "#{I18n.t '.index_placeholder'}", :class => "form-group main-form", :style => "height:40px;width:60%" %>
+<% else %>
+  <%= f.search_field :objname_fr_cont, :required => true, placeholder: "#{I18n.t '.index_placeholder'}", :class => "form-group main-form", :style => "height:40px;width:60%" %>
+
+<% end %>
   <%= f.submit "#{I18n.t '.index_submit'}", :name => nil, :class => 'btn btn-warning' %>
 <% end %>
 
