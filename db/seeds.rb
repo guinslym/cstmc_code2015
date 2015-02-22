@@ -22,7 +22,7 @@ if Rails.env.production?
     data_hash.each do |data|
 
     Artifact.create(
-        discipline_en: dat['discipline_en'],
+        discipline_en: data['discipline_en'],
         discipline_fr: data['discipline_fr'],
         catalogue_number: data['catalogue_number'],
         image_original: data['image_original'],
