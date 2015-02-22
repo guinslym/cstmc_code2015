@@ -14,7 +14,7 @@ Artifact.delete_all
 if Rails.env.production?  
 
   puts "seeding on heroku"
-  puts "seeding 55 905 row on Heroku's Mongodb take about 55 min. :("
+  puts "seeding 55 905 row on Heroku's Mongodb take about 1hr10 min. :("
   puts "on Heroku the seeding process  halt for 5 min on 54 771th and on the last document also????\nbut there is no Exception raise:)"
 
   def on_heroku_upload_this_file_to_the_db
