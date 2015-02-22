@@ -48,6 +48,9 @@ if Rails.env.production?
 
   end
 
+  #calling the function
+  on_heroku_upload_this_file_to_the_db()
+
 else#if Rails.env.production?  
 
   puts "seeding on Dev and Test db"
