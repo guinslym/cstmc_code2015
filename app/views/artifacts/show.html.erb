@@ -67,12 +67,18 @@ end
 <h1><%#=t :hello_world %></h1>
 -->
 
-
+<% locale_en = (I18n.locale).eql?("en") %>
 <div class="col-lg-10 col-lg-offset-1">
                 <div class="benefit">
                 <span data-animation="bounceIn" class="benefit-icon fa fa-search-plus bounceIn animated done-animation"></span>
-                <img id="zoom" src="<%= @artifact.image_original %>" data-zoom-image="<%= @artifact.image_original %>"  class="thumbnail" alt="<%= @artifact.objname_en %>"/>                 <h4 class="benefit-title"><%=  @artifact.objname_en %></h4>
+                <img id="zoom" src="<%= @artifact.image_original %>" data-zoom-image="<%= @artifact.image_original %>"  class="thumbnail" alt="<%= @artifact.objname_en %>"/>  
+                <% if locale_en %>               
+                <h4 class="benefit-title"><%=  @artifact.objname_en %></h4>
                 <h1 class="post-title text-center"><%=  @artifact.objname_en %></h1>
+                <% else %>
+                <h4 class="benefit-title"><%=  @artifact.objname_fr %></h4>
+                <h1 class="post-title text-center"><%=  @artifact.objname_fr %></h1>
+                <% end %>
 
 
                 <table class="table table-bordered show_content table-hover" style="background-color:#F2F2F2;">
@@ -92,7 +98,13 @@ end
       </tr>
       <tr>
         <td><%= I18n.t '.shw_art_name' %></td>
-        <td><%= @artifact.objname_en %></td>
+        <td>
+        <% if locale_en %>
+          <%= @artifact.objname_en %>
+        <% else %>
+          <%= @artifact.objname_fr %>
+        <% end %>
+        </td>
       </tr>
       <tr>
         <td><abbr title="<%= I18n.t '.shw_catalogue_number_meaning' %> " class="initialism" style="color:green"> <%= I18n.t '.shw_catalogue_number' %> </abbr></td>
