@@ -13,16 +13,16 @@
 <%= paginate @artifacts,  :outer_window => 4, :window =>  4  %>
 
 <% 
-a_group_alpha = ["efb894", "f34a5e", "03cd53", "25ffd8", "9eddd0", "65473b", "652282", "a329b6", "83b307", "74d198", "733341", "e77ef4", "cc2ed2", "711547", "a82154"]
-
-b_composition = ["f95ac7", "17de88", "ca6e8e", "5565e0", "7eefbb", "1f6fa2", "2a2021", "e27b93", "7cf11e", "0d75a5", "ad5bcf", "82d696", "2485f6", "5adea3", "8d9d46", "2b6be1", "d81047", "700b0c", "12e573", "019fdd", "696aa0", "e0c2ed", "d6fa76", "e6d049"]
-%>
-<% 
 #application helper
 @composition = []
+locale_en = (I18n.locale).eql?("en")
 if !@artifacts.nil? 
 @artifacts.each do |artefact| 
+    if locale_en
     materiaux = eval(artefact.artifact_composition_general_en)
+  else
+    materiaux = eval(artefact.artifact_composition_general_fr)
+  end
     if materiaux.size > 0
       materiaux.each do |mat|
         if !mat.eql?('[]')
@@ -56,14 +56,16 @@ end
 <%
 group =[]
 @artifacts.each do |artefact|
-artefact = eval(artefact.artifact_group_en)
+if locale_en
+  artefact = eval(artefact.artifact_group_en)
+else
+  artefact = eval(artefact.artifact_group_fr)
+end
 artefact.each {|n| group.push(n.split.collect { |w| w }.join('_')) if !n.empty?}
 
 end
 @group_artifact = group.uniq!
 %>
-<%#= @group_artifact  %>
-<%#= @composition  %>
 <% 
 
 def find_group(art_group)
@@ -77,33 +79,26 @@ end
  %>
 
  <h1>test locale <%= I18n.locale  %></h1>
+
+
 <section class="cd-gallery">
 
       <ul>
-       <% 
-          color = ['color-1', 'color-2']
-          radio = ['radio2', 'radio3']
-          option = ['option1', 'option2', 'option3', 'option4']
-
-          def find_color(color)
-            if color.eql?('1') || color.eql?('5')
-                return 'color-1'
-            else
-                return 'color-2'
-            end
-                
-                
-          end
-          %>
                 
           <% 
           compte = 0
           @artifacts.each do |artefact| 
             compte = compte + 1
             %>
-            <li class="mix <%= find_group(artefact.artifact_group_en) %>  <%= obj = find_materiaux(artefact.artifact_composition_general_en) %> <%= option.shuffle.first %>">
-            <% Rails.env.production?  %>
-            <%#= link_to (image_tag "rb/thumb/#{artefact.image_original.split("/")[-1]}", :tag =>"Image ", :class => "emr example#{compte}", data: {zoom_image: "#{artefact.image_original}"}), artefact %>
+
+            <% if (I18n.locale).to_s.eql?("en") %>
+            <li class="mix <%= find_group(artefact.artifact_group_en) %>  <%= obj = find_materiaux(artefact.artifact_composition_general_en) %>">
+
+            <% else %>
+            <li class="mix <%= find_group(artefact.artifact_group_fr) %>  <%= obj = find_materiaux(artefact.artifact_composition_general_fr) %>">
+
+            <% end %>
+
             <%= link_to (image_tag "#{artefact.image_original}", :tag =>"Image ", :class => "emr example#{compte}"), artefact %>
             <div class="show-title" style="background-color:white; padding:5px; margin: auto 0;">
               <h5><%= artefact.objname_en %></h5>
@@ -114,7 +109,7 @@ end
         <li class="gap"></li>
         <li class="gap"></li>
       </ul>
-      <div class="cd-fail-message">No results found</div>
+      <div class="cd-fail-message"><%= I18n.t '.r_no_result'  %></div>
     </section> <!-- cd-gallery -->
 
     <%= render "shared/facets", foo: @composition, baz: @group_artifact %>

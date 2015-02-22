@@ -267,6 +267,7 @@ fr:
   r_s_composition: "Classification par Matériaux"
   r_composition: "Matériaux"
   r_try: "Tapez"
+  r_no_result: "Aucun résultat trouvé"
   adv_back: Retour 
   adv_tips: "Remplissez au moins un champ."
   shw_opd: "Données Ouvertes"
