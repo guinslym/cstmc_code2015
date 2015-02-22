@@ -43,11 +43,14 @@ def advanced_search
 end
 
   def download_jpeg
-    if params.size.eql?(3)  #params must only accept 'id'
+    #http://localhost:3000/welcome/download_jpeg?id=54e9251b6775695f04295f00&locale=fr
+    parameters = params.keys
+
+    if parameters.include?('id')  #params must only accept 'id'
     	require 'open-uri'
-      @artefact = Artifact.find(params[:id])
-    	url = @artefact.image_link
-      filename = 'can-tech-museum-' + @artefact.uid + ".jpg"#url.split('/')[-1]
+      @artefact = Artifact.where(:id => params[:id]).first
+    	url = @artefact.image_original
+      filename = 'can-tech-museum-' + @artefact.catalogue_number + ".jpg"#url.split('/')[-1]
     	data = open(url).read
     	send_data data, :disposition => 'attachment', :filename => filename
     else
