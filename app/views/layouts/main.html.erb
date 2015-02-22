@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= content_for?(:title) ? yield(:title) : "Museum App" %></title>
+    <title><%= content_for?(:title) ? yield(:title) : "Open Data Code2015 Jeux de données: Musée |  Museum Image search Engine " %></title>
     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Museum App" %>">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
@@ -34,7 +34,12 @@
   <body>
   
 <section class="header_name">
-    <h3 class="text-center"><a href="/"><%= I18n.t '.cstm_abbr' %> <%= I18n.t '.index_title' %> ::<span>&nbsp;<%= I18n.t '.shw_opd' %></a></span></h3>
+    <h3 class="text-center">
+
+    <%= link_to root_path do %>
+  <%= I18n.t '.cstm_abbr' %> <%= I18n.t '.index_title' %> ::<span>&nbsp;<%= I18n.t '.shw_opd' %></a></span>
+<% end %>
+</h3>
 </section>
 
   <div class="container">
