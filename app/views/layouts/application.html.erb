@@ -44,7 +44,9 @@ height: 150px;
 </head>
 <body>
   <header class="cd-header">
-    <h1><a href="/welcome/index" class="home" style="color:white"><%= I18n.t '.r_home' %></a></h1>
+    <h1>
+      <%= link_to "#{I18n.t '.r_home'}", root_path, :class=>"home", :style =>"color:white" %>
+    </h1>
   </header>
 
 
