@@ -19,6 +19,7 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
+  #http://localhost:3000/?locale=fr
   root 'welcome#index'
 
   # Example of regular route:
