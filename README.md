@@ -10,6 +10,14 @@ please refers **[previously to my helper code](https://github.com/guinslym/cstmc
 	Mongodb (and Mongolabs add:on on heroku)
 	rails 4.x
 
+##installation
+	rake db:create
+	rake db:migrate
+	rake db:seed
+
+##todo
+	Javascript; filtering the content.
+
 Credits/or helpers that I use to help me build the app:--
 
 [CSTMC Datasets](http://techno-science.ca/) --
