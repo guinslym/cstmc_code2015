@@ -73,7 +73,7 @@ end
 
 <div class="col-lg-10 col-lg-offset-1">
                 <div class="benefit">
-                <span data-animation="bounceIn" class="benefit-icon fa fa-code bounceIn animated done-animation"></span>
+                <span data-animation="bounceIn" class="benefit-icon fa fa-search-plus bounceIn animated done-animation"></span>
                 <img id="zoom" src="<%= @artifact.image_original %>" data-zoom-image="<%= @artifact.image_original %>"  class="thumbnail" alt="<%= @artifact.objname_en %>"/>                 <h4 class="benefit-title"><%=  @artifact.objname_en %></h4>
                 <h1 class="post-title text-center"><%=  @artifact.objname_en %></h1>
 
@@ -210,6 +210,6 @@ $(function(){
 
 $(window).load(function(){  
      //initialize after images are loaded  
-      $("#zoom").elevateZoom({ zoomType : "inner", lensSize: 300, scrollZoom: true});
+      $("img#zoom").elevateZoom({ zoomType : "inner", lensSize: 300, scrollZoom: true});
 });
 </script>
