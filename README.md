@@ -11,9 +11,11 @@ please refers **[previously to my helper code](https://github.com/guinslym/cstmc
 	rails 4.x
 
 ##installation
+	bundle install
 	rake db:create
 	rake db:migrate
 	rake db:seed
+	guard
 
 ##todo
 	Javascript; filtering the content.
