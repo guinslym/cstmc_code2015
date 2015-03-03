@@ -8,6 +8,9 @@ The website are hosted on Heroku. [https://cstmc2015.herokuapp.com/](https://cst
 ###Code
 **My code is Messy :)** but if it woks for 15 minutes, that's probably what I needed.
 
+###update
+on March 3rd I have reviewed my code so the commits after **e8480a63** are the updated version of the app and the one before are the one at the **#CODE2015** (Ottawa)
+
 #Usage
 	Mongodb (and Mongolabs add:on on heroku)
 	rails 4.x
