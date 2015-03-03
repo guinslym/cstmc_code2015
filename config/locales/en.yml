@@ -204,8 +204,8 @@ en:
     pm: pm
   hello_world: Hello world!
   hello_flash: Hello flash!
-  cstm_abbr: C.S.T.M.
-  cstm_tooltip: Canada Science and Technology Museum
+  cstm_abbr: C.S.T.M.C.
+  cstm_tooltip: Canada Science and Technology Museums Corporation
   index_title: Image Search Engine  
   index_odi: Open Data Initiative
   index_placeholder: Search Artifacts images (i.e. fire, pencil, pen ..)
