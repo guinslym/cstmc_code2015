@@ -26,6 +26,7 @@ end
   # You can have the root of your site routed with "root"
   #http://localhost:3000/?locale=fr
   root 'welcome#index'
+  get "*path" => redirect("/")
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
