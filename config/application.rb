@@ -28,7 +28,7 @@ module MuseumCode2015
     # config.i18n.default_locale = :de
     config.encoding = "utf-8"
     config.time_zone = 'Eastern Time (US & Canada)'
-    config.i18n.default_locale = :fr
+    config.i18n.default_locale = :en
     config.generators.assets = false
     config.generators.helper = false
   end
