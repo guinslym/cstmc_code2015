@@ -1,9 +1,9 @@
-### CSTMC.info
+### [CSTMC.info](http://www.cstmc.info)
 
 ####Notes
 please refers **[previously to my helper code](https://github.com/guinslym/cstmc_helper_to_parse_the_dataset)** that helped me parse the datasets
 
-The website are hosted on Heroku. [www.cstmc.info](http://www.cstmc.info) or at [https://cstmc2015.herokuapp.com/](https://cstmc2015.herokuapp.com/). All the images are the original one, meaning that the images can be up to 12 mb so that's why when we do a query, the page is slow to render, but the query is pretty fast.
+[www.cstmc.info](http://www.cstmc.info) or at [https://cstmc2015.herokuapp.com/](https://cstmc2015.herokuapp.com/) and the images are hosted on the Canada Science and Technology Museums Corporation server. All the images are the original one, meaning that the images can be up to 12 mb so that's why when we do a query, the page is slow to render, but the query is pretty fast.
 
 
 
