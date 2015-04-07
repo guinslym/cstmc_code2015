@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/guinslym/theater_js_rails
+  revision: debcf5053f258daf3df2fda2860eb19e81d02459
+  specs:
+    theater_js_rails (0.0.3)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -401,6 +407,7 @@ DEPENDENCIES
   sdoc (~> 0.4.0)
   smailer
   spring
+  theater_js_rails!
   thin
   turbolinks
   uglifier (>= 1.3.0)

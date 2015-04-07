@@ -15,5 +15,6 @@
 //require okzoom
 //= require mixitup
 //= require turbolinks
+//= require theater
 //= require bootstrap-sprockets
 //= require_tree .
